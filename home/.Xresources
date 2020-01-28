@@ -1,0 +1,9 @@
+!!!! In order to reload this file, run command:
+!!!!   xrdb ~/.Xresources
+
+! URxvt
+URxvt.font: xft:dejavu sans mono:bold:size=11
+URxvt.scrollBar: false
+
+URxvt.background: #0a0a0a
+URxvt.foreground: #d3d3d3

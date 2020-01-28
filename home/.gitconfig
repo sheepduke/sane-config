@@ -1,0 +1,5 @@
+[alias]
+    cm = commit -m
+    co = checkout
+    cp = cherry-pick
+    st = status
