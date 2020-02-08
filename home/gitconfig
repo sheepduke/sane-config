@@ -1,3 +1,6 @@
+[user]
+    name = ***
+    email = ***
 [alias]
     cm = commit -m
     co = checkout

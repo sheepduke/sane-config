@@ -1,0 +1,12 @@
+export LC_CTYPE="zh_CN.UTF-8"
+
+ibus-daemon -dx
+syncthing --no-browser &
+pulseaudio --start &
+unclutter -display $DISPLAY -idle 1 &
+setxkbmap -option "ctrl:nocaps"
+xrdb -merge ~/.Xresources
+dunst &
+
+# exec ~/projects/config/stumpwm-settings/stumpwm.ros
+exec xmonad
