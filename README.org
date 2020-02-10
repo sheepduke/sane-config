@@ -1,0 +1,5 @@
+
+* Introduction
+
+This project is used for setting up working environment on a new Linux
+machine.
