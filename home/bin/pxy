@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export http_proxy=http://localhost:1070
+export https_proxy=http://localhost:1070
+export no_proxy=localhost,127.0.0.1
+
+$*
