@@ -1,0 +1,3 @@
+# Use your HTTP proxy for SSH connection to example.com.
+Host example.com
+  ProxyCommand connect -H 127.0.0.1:1070 %h %p
