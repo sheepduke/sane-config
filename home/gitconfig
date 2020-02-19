@@ -2,6 +2,7 @@
     name = ***
     email = ***
 [alias]
+    br = branch
     cm = commit -m
     co = checkout
     cp = cherry-pick

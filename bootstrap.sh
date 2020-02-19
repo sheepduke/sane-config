@@ -5,15 +5,15 @@ mkdir -p ~/projects/config/
 # Oh My ZSH
 echo "Setting up ZSH..."
 git clone git@github.com:/ohmyzsh/ohmyzsh ~/.oh-my-zsh
-ln zshrc ~/.zshrc
-ln tmux.conf ~/.tmux.conf
+ln home/zshrc ~/.zshrc
+ln home/tmux.conf ~/.tmux.conf
 
 # Git
-ln gitconfig ~/.gitconfig
+ln home/gitconfig ~/.gitconfig
 
 # Xorg
-ln xinitrc ~/.xinitrc
-ln Xresources ~/.Xresources
+ln home/xinitrc ~/.xinitrc
+ln home/Xresources ~/.Xresources
 
 
 # Input method.
