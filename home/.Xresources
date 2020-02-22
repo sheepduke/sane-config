@@ -1,0 +1,58 @@
+!!!! In order to reload this file, run command:
+!!!!   xrdb ~/.Xresources
+
+! URxvt
+urxvt*font: xft:DejaVu Sans Mono:size=12, xft:WenQuanYi Micro Hei Mono:size=12
+URxvt.scrollBar: false
+urxvt.letterSpace: -1
+
+! Emacs*useXIM: true
+
+! ----------------------------------------------------------------------
+!                                Theme
+! ----------------------------------------------------------------------
+
+! Default
+
+! urxvt*foreground: white
+! urxvt*background: black
+
+! *color0:  #2E3436
+! *color1:  #a40000
+! *color2:  #4E9A06
+! *color3:  #C4A000
+! *color4:  #3465A4
+! *color5:  #75507B
+! *color6:  #ce5c00
+! *color7:  #babdb9
+! *color8:  #555753
+! *color9:  #EF2929
+! *color10: #8AE234
+! *color11: #FCE94F
+! *color12: #729FCF
+! *color13: #AD7FA8
+! *color14: #fcaf3e
+! *color15: #EEEEEC
+
+! Snazzy
+
+*background:   #282a36
+*foreground:   #eff0eb
+*cursorColor:  #9aedfe
+
+*color0:      #33303b
+*color8:      #4f4b58
+*color1:      #ff5c57
+*color9:      #ff5c57
+*color2:      #5af78e
+*color10:     #5af78e
+*color3:      #f3f99d
+*color11:     #f3f99d
+*color4:      #57c7ff
+*color12:     #57c7ff
+*color5:      #ff6ac1
+*color13:     #ff6ac1
+*color6:      #9aedfe
+*color14:     #9aedfe
+*color7:      #eff0eb
+*color15:     #eff0eb

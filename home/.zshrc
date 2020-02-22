@@ -1,48 +1,47 @@
-# -*- mode: shell-script -*-
-
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.roswell/bin:$PATH
+export HOME="/home/sheep"
+
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.roswell/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Language settings.
+export LANG=en_US.UTF-8
 export LC_CTYPE="zh_CN.UTF-8"
 export GTK_IM_MODULE="ibus"
 export QT_IM_MODULE="ibus"
 export XMODIFIERS="@im=ibus"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# export XIM=ibus
+# export XIM_PROGRAM=ibus
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="my"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -63,40 +62,73 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    colored-man-pages
+    colorize
+    dotenv
+    osx
+    z
+    zsh-syntax-highlighting
+    # Development
+    git docker jsontools
+    # Java
+    mvn npm
+    # Ruby
+    ruby rbenv bundler rake
+    # Python
+    pip
+    # Elixir
+    mix
+    # Misc
+    themes
+
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Enable history-substring-search
+DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# ssh
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Environment setttings
+#
+# Javascript
+NPM_PACKAGES="$HOME/.npm-packages"
+PATH="$NPM_PACKAGES/bin:$PATH"
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
+# Golang
+export GOPATH="$HOME/lib/golang"
+export PATH="$PATH:$GOPATH/bin"
+
+# Arduino
+export ARDUINO_SKETCHBOOK="$HOME/lib/arduino"
+
+# Ruby
+export GEM_HOME="$HOME/lib/ruby"
+PATH="$PATH:${GEM_HOME}/bin"
+
+# Rust
+export RUST_CARGO_HOME="$HOME/.cargo"
+PATH="$RUST_CARGO_HOME/bin:$PATH"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -106,7 +138,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+    exec startx -- vt1;
+fi
 
-if [ -n "$DISPLAY" ] && [ -z "$TMUX" ]; then
-	tmux a
+if [[ -z "$TMUX" ]]; then
+    if [[ -z $(pgrep tmux) ]]; then
+        tmux
+    else
+        if [[ $(pgrep urxvt | wc -l) -lt 2 ]]; then
+            tmux a
+        fi
+    fi
 fi
