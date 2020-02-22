@@ -1,9 +1,10 @@
 !!!! In order to reload this file, run command:
-!!!!   xrdb ~/.Xresources
+!!!!   xrdb -merge ~/.Xresources
 
 ! URxvt
+URxvt*font: xft:DejaVu Sans Mono:size=18, xft:WenQuanYi Micro Hei Mono:size=12
 urxvt*font: xft:DejaVu Sans Mono:size=12, xft:WenQuanYi Micro Hei Mono:size=12
-URxvt.scrollBar: false
+urxvt.scrollBar: false
 urxvt.letterSpace: -1
 
 ! Emacs*useXIM: true
@@ -13,9 +14,6 @@ urxvt.letterSpace: -1
 ! ----------------------------------------------------------------------
 
 ! Default
-
-! urxvt*foreground: white
-! urxvt*background: black
 
 ! *color0:  #2E3436
 ! *color1:  #a40000

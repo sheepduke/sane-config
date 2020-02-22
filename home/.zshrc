@@ -142,7 +142,7 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx -- vt1;
 fi
 
-if [[ -z "$TMUX" ]]; then
+if [[ -n $DISPLAY ]] && [[ -z "$TMUX" ]]; then
     if [[ -z $(pgrep tmux) ]]; then
         tmux
     else
