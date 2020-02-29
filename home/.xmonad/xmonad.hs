@@ -5,6 +5,7 @@ import XMonad.Hooks.ManageHelpers
   , isDialog
   , transience'
   )
+import XMonad.Hooks.SetWMName
 import XMonad.StackSet (focusDown, focusUp)
 import XMonad.Util.EZConfig
 
@@ -19,7 +20,6 @@ myManageHook =
     , className =? "Firefox" --> doShift "2"
     , className =? "keepassxc" --> doShift "7"
     , className =? "KeePassXC" --> doShift "7"
-    , isDialog --> doCenterFloat
     ]
 
 myRemovedKeys = [("M-<Space>")]
@@ -32,12 +32,16 @@ myKeyMap =
   , ("M-n", sendMessage NextLayout)
   ]
 
+-- Fix the display problem of Java Swing programs.
+myStartupHook = setWMName "LG3D"
+
 myConfig =
   def
     { modMask = winKey -- Set 'Mod' to windows key.
     , terminal = "urxvt" -- Set default terminal to URxvt.
     , borderWidth = 0 -- Disable border width.
     , manageHook = myManageHook
+    , startupHook = myStartupHook
     }
 
 -- myKeyMap config = [("M-")]
