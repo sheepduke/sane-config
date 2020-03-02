@@ -29,11 +29,16 @@ IsNotepadWindow() {
     return WinActive("ahk_class Notepad")
 }
 
+IsVisualStudioWindow() {
+    SetTitleMatchMode 2
+    return WinActive("Visual Studio")
+}
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                              Basic                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsConsoleWindow() or IsNotepadWindow()
+#if IsConsoleWindow() or IsNotepadWindow() or IsVisualStudioWindow()
 
 ; C-f => Forward char.
 ^F::Send {Right}
@@ -110,3 +115,11 @@ MsgBox, The active window is "%Title%".
 
 ; C-M-R => Reload script.
 ^!+r::Reload
+
+^!+x::
+if IsVisualStudioWindow() {
+    MsgBox, "Catch!"
+}
+else {
+    MsgBox, "Wrong"
+}
