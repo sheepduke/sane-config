@@ -1,4 +1,5 @@
 import XMonad
+import qualified XMonad.Actions.Volume as Volume
 import XMonad.Hooks.ManageHelpers
   ( doCenterFloat
   , doFullFloat
@@ -14,6 +15,22 @@ import XMonad.Util.EZConfig
 --
 winKey = mod4Mask
 
+-- Functions
+--
+-- Screenshot
+--
+--
+screenshotPath = "~/pictures/screenshots/%Y-%m-%d_%H.%M.%S.png"
+
+doFullScreenshot :: X ()
+doFullScreenshot = spawn $ "scrot -q 85 " ++ screenshotPath
+
+doSelectScreenshot :: X ()
+doSelectScreenshot = spawn $ "sleep 0.3; scrot -q 85 -s " ++ screenshotPath
+
+-- Hooks
+--
+--
 myManageHook =
   composeAll
     [ className =? "Emacs" --> doShift "1"
@@ -22,6 +39,9 @@ myManageHook =
     , className =? "KeePassXC" --> doShift "7"
     ]
 
+-- Key mapping.
+--
+--
 myRemovedKeys = [("M-<Space>")]
 
 myKeyMap =
@@ -30,8 +50,15 @@ myKeyMap =
   , ("M-S-h", sendMessage Shrink)
   , ("M-S-l", sendMessage Expand)
   , ("M-n", sendMessage NextLayout)
+  , ("M-<Left>", Volume.lowerVolume 2 >> return ())
+  , ("M-<Right>", Volume.raiseVolume 2 >> return ())
+  , ("M-<Up>", Volume.raiseVolume 10 >> return ())
+  , ("M-<Down>", Volume.lowerVolume 10 >> return ())
+  , ("<Print>", doFullScreenshot)
+  , ("S-<Print>", doSelectScreenshot)
   ]
 
+--  , ("M-<Right>", Volume.raiseVolume 2)
 -- Fix the display problem of Java Swing programs.
 myStartupHook = setWMName "LG3D"
 

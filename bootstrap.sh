@@ -14,7 +14,8 @@ ln home/gitconfig ~/.gitconfig
 # Xorg
 ln home/xinitrc ~/.xinitrc
 ln home/Xresources ~/.Xresources
-
+stack install xmonad
+stack install xmonad-extras
 
 # Input method.
 git clone git@github.com:/sheepduke/rime-wubi86 ~/projects/config/rime-wubi86
