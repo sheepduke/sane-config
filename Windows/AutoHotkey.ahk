@@ -120,9 +120,13 @@ return
 ;;                            OneNote                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsOneNoteWindow()
+#if IsNotepadWindow() or IsOneNoteWindow()
 
 ^K::KillLine()
+!+.::Send ^{End}
+!+,::Send ^{Home}
+^v::Send {PgDn}
+!v::Send {PgUp}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                            Firefox                               ;;
