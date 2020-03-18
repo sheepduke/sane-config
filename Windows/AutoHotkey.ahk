@@ -25,15 +25,6 @@ IsConsoleWindow() {
     return IsCmdWindow() or IsPowerShellWindow()
 }
 
-IsNotepadWindow() {
-    return WinActive("ahk_class Notepad")
-}
-
-IsVisualStudioWindow() {
-    SetTitleMatchMode 2
-    return WinActive("Visual Studio")
-}
-
 IsOneNoteWindow() {
     SetTitleMatchMode 2
     return WinActive("OneNote")
@@ -53,8 +44,7 @@ KillLine() {
 ;;                              Basic                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsConsoleWindow() or IsNotepadWindow() or IsVisualStudioWindow()
-or IsOneNoteWindow()
+#if IsConsoleWindow() or IsOneNoteWindow()
 
 ; C-f => Forward char.
 ^F::Send {Right}
@@ -120,7 +110,7 @@ return
 ;;                            OneNote                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsNotepadWindow() or IsOneNoteWindow()
+#if IsOneNoteWindow()
 
 ^K::KillLine()
 !+.::Send ^{End}
@@ -167,11 +157,3 @@ return
 
 ; C-M-R => Reload script.
 ^!+r::Reload
-
-^!+x::
-if IsVisualStudioWindow() {
-    MsgBox, "Catch!"
-}
-else {
-    MsgBox, "Wrong"
-}
