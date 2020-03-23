@@ -17,12 +17,16 @@ IsCmdWindow() {
     return WinActive("ahk_class ConsoleWindowClass")
 }
 
+IsVirtualConsoleWindow() {
+    return WinActive("ahk_class VirtualConsoleClass")
+}
+
 IsPowerShellWindow() {
     return WinActive("powershell") or WinActive("Windows PowerShell (Admin)")
 }
 
 IsConsoleWindow() {
-    return IsCmdWindow() or IsPowerShellWindow()
+    return IsCmdWindow() or IsPowerShellWindow() or IsVirtualConsoleWindow()
 }
 
 IsOneNoteWindow() {
@@ -105,6 +109,9 @@ return
 #if IsPowerShellWindow()
 ; C-k => Kill line.
 ^k::KillLine()
+
+#if IsVirtualConsoleWindow() or IsPowerShellWindow()
+^K::KillLine()
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                            OneNote                               ;;
