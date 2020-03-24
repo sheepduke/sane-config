@@ -3,7 +3,7 @@
     email = ***
 [alias]
     br = branch
-    cm = commit -m
+    cm = commit
     co = checkout
     cp = cherry-pick
     st = status
