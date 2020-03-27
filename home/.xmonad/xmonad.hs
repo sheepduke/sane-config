@@ -20,13 +20,15 @@ winKey = mod4Mask
 -- Screenshot
 --
 --
-screenshotPath = "~/pictures/screenshots/%Y-%m-%d_%H.%M.%S.png"
+screenshotPath = "~/pictures/screenshots/$(date +%Y-%m-%d_%H.%M.%S.png)"
 
 doFullScreenshot :: X ()
 doFullScreenshot = spawn $ "scrot -q 85 " ++ screenshotPath
 
 doSelectScreenshot :: X ()
-doSelectScreenshot = spawn $ "sleep 0.3; scrot -q 85 -s " ++ screenshotPath
+doSelectScreenshot =
+  spawn $
+  "sleep 0.2; scrot -q 85 -a $(slop -f '%x,%y,%w,%h') " ++ screenshotPath
 
 -- Hooks
 --
