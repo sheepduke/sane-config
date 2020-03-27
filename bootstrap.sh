@@ -5,15 +5,15 @@ mkdir -p ~/projects/config/
 # Oh My ZSH
 echo "Setting up ZSH..."
 git clone git@github.com:/ohmyzsh/ohmyzsh ~/.oh-my-zsh
-ln home/zshrc ~/.zshrc
-ln home/tmux.conf ~/.tmux.conf
+ln -s home/zshrc ~/.zshrc
+ln -s home/tmux.conf ~/.tmux.conf
 
 # Git
-ln home/gitconfig ~/.gitconfig
+cp home/gitconfig ~/.gitconfig
 
 # Xorg
-ln home/xinitrc ~/.xinitrc
-ln home/Xresources ~/.Xresources
+ln -s home/xinitrc ~/.xinitrc
+ln -s home/Xresources ~/.Xresources
 stack install xmonad
 stack install xmonad-extras
 
