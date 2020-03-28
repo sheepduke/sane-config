@@ -8,6 +8,7 @@ import XMonad.Hooks.ManageHelpers
   )
 import XMonad.Hooks.SetWMName
 import XMonad.StackSet (focusDown, focusUp)
+import qualified XMonad.Util.Brightness as Bright
 import XMonad.Util.EZConfig
 
 -- Key definitions
@@ -58,6 +59,8 @@ myKeyMap =
   , ("M-<Down>", Volume.lowerVolume 10 >> return ())
   , ("<Print>", doFullScreenshot)
   , ("S-<Print>", doSelectScreenshot)
+  , ("<XF86MonBrightnessUp>", Bright.increase)
+  , ("<XF86MonBrightnessDown>", Bright.decrease)
   ]
 
 --  , ("M-<Right>", Volume.raiseVolume 2)
