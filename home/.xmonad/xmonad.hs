@@ -59,6 +59,8 @@ myKeyMap =
   , ("M-<Down>", Volume.lowerVolume 10 >> return ())
   , ("<Print>", doFullScreenshot)
   , ("S-<Print>", doSelectScreenshot)
+    -- /sys/class/backlight/intel_backlight/brightness can only be written by root.
+    -- Make sure you have permission to write it.
   , ("<XF86MonBrightnessUp>", Bright.increase)
   , ("<XF86MonBrightnessDown>", Bright.decrease)
   ]

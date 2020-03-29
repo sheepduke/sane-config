@@ -3,7 +3,7 @@
 
 ! Set it as the multiples of 96 (magic number).
 ! This is useful in HiDPI monitors.
-Xft.dpi: 240
+! Xft.dpi: 192
 
 ! URxvt
 urxvt*font: xft:DejaVu Sans Mono:size=12, xft:WenQuanYi Micro Hei Mono:size=12
