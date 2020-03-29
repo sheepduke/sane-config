@@ -11,6 +11,7 @@ app-shells/bash-completion
 app-shells/gentoo-zsh-completions
 app-shells/zsh
 app-shells/zsh-completions
+app-shells/zsh-syntax-highlighting
 app-text/dos2unix
 app-text/multitail
 app-text/tree
