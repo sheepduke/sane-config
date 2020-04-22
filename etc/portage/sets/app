@@ -29,7 +29,6 @@ media-gfx/scrot
 media-sound/pavucontrol
 media-sound/pulseaudio
 media-video/mpv
-net-dns/bind-tools
 net-fs/sshfs
 net-mail/getmail
 net-mail/notmuch
