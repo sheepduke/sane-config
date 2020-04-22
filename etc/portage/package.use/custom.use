@@ -1,0 +1,10 @@
+app-admin/keepassxc browser -network
+app-editors/emacs dynamic-loading gif gtk imagemagick inotify jpeg libxml2 png vsg tiff X xft zlib
+www-client/firefox pulseaudio
+x11-terms/rxvt-unicode focused-urgency font-styles mousewheel startup-notificatoin -vanilla 256-color blink buffer-on-clear wcwidth xft
+sys-boot/refind ntfs
+
+# No idea why it is needed. Portage does not work without it.
+media-libs/libcanberra alsa
+x11-libs/cairo aqua X
+dev-cpp/cairomm aqua X
