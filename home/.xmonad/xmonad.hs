@@ -63,6 +63,9 @@ myKeyMap =
     -- Make sure you have permission to write it.
   , ("<XF86MonBrightnessUp>", Bright.increase)
   , ("<XF86MonBrightnessDown>", Bright.decrease)
+  , ("<XF86AudioLowerVolume>", Volume.lowerVolume 2 >> return ())
+  , ("<XF86AudioRaiseVolume>", Volume.raiseVolume 2 >> return ())
+  , ("<XF86AudioMute>", Volume.toggleMute >> return ())
   ]
 
 --  , ("M-<Right>", Volume.raiseVolume 2)
