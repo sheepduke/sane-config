@@ -161,6 +161,3 @@ return
 WinGetTitle, Title, A
 MsgBox, The active window is "%Title%".
 return
-
-; C-M-R => Reload script.
-^!+r::Reload
