@@ -1,0 +1,10 @@
+[Unit]
+Description = WPA Supplicant
+After = network.target
+
+[Service]
+ExecStart = wpa_supplicant -D nl80211 -i wlp0s20f3  -c /etc/wpa_supplicant/wpa_supplicant.conf
+Restart = on-abort
+
+[Install]
+WantedBy = multi-user.target

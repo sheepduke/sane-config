@@ -8,6 +8,7 @@ import XMonad.Hooks.ManageHelpers
   )
 import XMonad.Hooks.SetWMName
 import XMonad.StackSet (focusDown, focusUp)
+import qualified XMonad.Util.Brightness as Bright
 import XMonad.Util.EZConfig
 
 -- Key definitions
@@ -20,13 +21,15 @@ winKey = mod4Mask
 -- Screenshot
 --
 --
-screenshotPath = "~/pictures/screenshots/%Y-%m-%d_%H.%M.%S.png"
+screenshotPath = "~/pictures/screenshots/$(date +%Y-%m-%d_%H.%M.%S.png)"
 
 doFullScreenshot :: X ()
 doFullScreenshot = spawn $ "scrot -q 85 " ++ screenshotPath
 
 doSelectScreenshot :: X ()
-doSelectScreenshot = spawn $ "sleep 0.3; scrot -q 85 -s " ++ screenshotPath
+doSelectScreenshot =
+  spawn $
+  "sleep 0.2; scrot -q 85 -a $(slop -f '%x,%y,%w,%h') " ++ screenshotPath
 
 -- Hooks
 --
@@ -56,6 +59,13 @@ myKeyMap =
   , ("M-<Down>", Volume.lowerVolume 10 >> return ())
   , ("<Print>", doFullScreenshot)
   , ("S-<Print>", doSelectScreenshot)
+    -- /sys/class/backlight/intel_backlight/brightness can only be written by root.
+    -- Make sure you have permission to write it.
+  , ("<XF86MonBrightnessUp>", Bright.increase)
+  , ("<XF86MonBrightnessDown>", Bright.decrease)
+  , ("<XF86AudioLowerVolume>", Volume.lowerVolume 2 >> return ())
+  , ("<XF86AudioRaiseVolume>", Volume.raiseVolume 2 >> return ())
+  , ("<XF86AudioMute>", Volume.toggleMute >> return ())
   ]
 
 --  , ("M-<Right>", Volume.raiseVolume 2)

@@ -1,8 +1,11 @@
 !!!! In order to reload this file, run command:
 !!!!   xrdb -merge ~/.Xresources
 
+! Set it as the multiples of 96 (magic number).
+! This is useful in HiDPI monitors.
+! Xft.dpi: 192
+
 ! URxvt
-URxvt*font: xft:DejaVu Sans Mono:size=18, xft:WenQuanYi Micro Hei Mono:size=12
 urxvt*font: xft:DejaVu Sans Mono:size=12, xft:WenQuanYi Micro Hei Mono:size=12
 urxvt.scrollBar: false
 urxvt.letterSpace: -1

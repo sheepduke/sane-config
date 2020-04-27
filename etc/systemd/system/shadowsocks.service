@@ -1,0 +1,10 @@
+[Unit]
+Description = "Shadowsocks Client"
+After = network.target
+
+[Service]
+ExecStart = /usr/bin/ss-local -c /etc/shadowsocks-libev/shadowsocks.json
+Restart = on-abort
+
+[Install]
+WantedBy = multi-user.target

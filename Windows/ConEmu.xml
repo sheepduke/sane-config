@@ -141,11 +141,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="459"/>
-			<value name="ConWnd Y" type="long" data="-10"/>
-			<value name="LastMonitor" type="string" data="0,30,1920,1200"/>
-			<value name="ConWnd Width" type="dword" data="0000009d"/>
-			<value name="ConWnd Height" type="dword" data="00000030"/>
+			<value name="ConWnd X" type="long" data="38"/>
+			<value name="ConWnd Y" type="long" data="0"/>
+			<value name="LastMonitor" type="string" data="0,90,3840,2160"/>
+			<value name="ConWnd Width" type="dword" data="00000058"/>
+			<value name="ConWnd Height" type="dword" data="0000001c"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
