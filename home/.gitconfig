@@ -1,9 +1,14 @@
-[user]
-    name = ***
-    email = ***
 [alias]
-    br = branch
-    cm = commit
-    co = checkout
+	br = branch
+	co = checkout
+	cm = commit
     cp = cherry-pick
-    st = status
+    df = diff
+    ds = diff --cached
+    fa = fetch -a
+    re = rebase
+	st = status --ahead-behind
+    stu = status --ahead-behind -uno
+
+[include]
+    path = gituser.conf
