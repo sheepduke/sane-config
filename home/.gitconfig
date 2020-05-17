@@ -14,10 +14,13 @@
     df = diff
     ds = diff --cached
     fa = fetch -a
+    lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     re = rebase
 	st = status --ahead-behind
     stu = status --ahead-behind -uno
-    lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    wa = worktree add
+    wl = worktree list
+    wr = worktree remove
     
 [include]
     path = gituser.conf
