@@ -22,12 +22,16 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
-ibus-daemon -dx
-syncthing --no-browser &
-pulseaudio --start &
+# These shall be started via user-level services.
+# 
+# syncthing --no-browser &
+# pulseaudio --start &
+# dunst &
+
+ibus-daemon -rdx
 unclutter -display $DISPLAY -idle 1 &
 setxkbmap -option "ctrl:nocaps"
 xrdb -merge ~/.Xresources
-dunst &
 
-exec xmonad
+# exec xmonad
+exec i3
