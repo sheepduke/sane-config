@@ -1,3 +1,11 @@
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+	ui = auto
+	pager = true
+
 [alias]
 	br = branch
 	co = checkout
@@ -9,6 +17,7 @@
     re = rebase
 	st = status --ahead-behind
     stu = status --ahead-behind -uno
-
+    lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    
 [include]
     path = gituser.conf
