@@ -1,10 +1,26 @@
 app-admin/keepassxc browser -network
+app-arch/p7zip rar
 app-editors/emacs dynamic-loading gif gtk imagemagick inotify jpeg libxml2 png vsg tiff X xft zlib
-www-client/firefox pulseaudio
-x11-terms/rxvt-unicode focused-urgency font-styles mousewheel startup-notificatoin -vanilla 256-color blink buffer-on-clear wcwidth xft
-sys-boot/refind ntfs
-
-# No idea why it is needed. Portage does not work without it.
+app-emulation/virtualbox qt5
+app-i18n/ibus -emoji gtk python
+app-office/libreoffice-l10n linguas_zh_CN
+app-text/texlive context cjk xetex epspdf extra l10n_zh graphics science
+app-text/texlive-core xetex cjk detex
+dev-cpp/cairomm X
+dev-java/icedtea-bin -alsa -cups -pulseaudio -webstart source
+dev-java/openjdk source
+dev-lang/ruby -berkdb -gdbm -ipv6 -rdoc ssl
+mail-mta/msmtp mta nls ssl
+media-gfx/imagemagick jpeg png raw svg tiff
+media-libs/freetype -bindist infinality
 media-libs/libcanberra alsa
-x11-libs/cairo aqua X
-dev-cpp/cairomm aqua X
+media-plugins/alsa-plugins pulseaudio
+net-im/pidgin gtk
+net-misc/aria2 bittorrent
+net-print/hplip hpcups scanner
+sys-boot/refind ntfs
+sys-devel/gcc -gcj
+sys-libs/glibc debug
+sys-libs/zlib static-libs
+www-apps/nextcloud sqlite postgres vhosts
+x11-terms/rxvt-unicode focused-urgency font-styles mousewheel startup-notificatoin -vanilla 256-color blink buffer-on-clear wcwidth xft

@@ -13,7 +13,6 @@ app-text/pdftk
 app-text/poppler
 app-text/sdcv
 dev-db/sqlite
-dev-haskell/stack-bin
 dev-util/android-tools
 mail-filter/procmail
 mail-mta/msmtp
@@ -48,3 +47,4 @@ x11-misc/slock
 x11-misc/unclutter
 x11-misc/xbindkeys
 x11-terms/rxvt-unicode
+x11-wm/i3
