@@ -33,5 +33,4 @@ unclutter -display $DISPLAY -idle 1 &
 setxkbmap -option "ctrl:nocaps"
 xrdb -merge ~/.Xresources
 
-# exec xmonad
 exec i3
