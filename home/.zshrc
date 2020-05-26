@@ -130,6 +130,9 @@ PATH="$PATH:${GEM_HOME}/bin"
 export RUST_CARGO_HOME="$HOME/.cargo"
 PATH="$RUST_CARGO_HOME/bin:$PATH"
 
+# OCaml - opam configuration
+test -r $HOME/.opam/opam-init/init.sh && . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
