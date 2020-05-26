@@ -1,22 +1,22 @@
 [color]
-	status = auto
-	branch = auto
-	diff = auto
-	interactive = auto
-	ui = auto
-	pager = true
+    status = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    ui = auto
+    pager = true
 
 [alias]
-	br = branch
-	co = checkout
-	cm = commit
+    br = branch
+    co = checkout
+    cm = commit
     cp = cherry-pick
     df = diff
     ds = diff --cached
     fa = fetch -a
     lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     re = rebase
-	st = status --ahead-behind
+    st = status --ahead-behind
     stu = status --ahead-behind -uno
     wa = worktree add
     wl = worktree list
