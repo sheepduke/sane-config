@@ -18,9 +18,10 @@
     re = rebase
     st = status --ahead-behind
     stu = status --ahead-behind -uno
+    sw = switch
     wa = worktree add
     wl = worktree list
     wr = worktree remove
     
 [include]
-    path = gituser.conf
+    path = .gituser.conf
