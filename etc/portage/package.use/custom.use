@@ -4,6 +4,7 @@ app-editors/emacs dynamic-loading gif gtk imagemagick inotify jpeg libxml2 png v
 app-emulation/virtualbox qt5
 app-i18n/ibus -emoji gtk python
 app-office/libreoffice-l10n linguas_zh_CN
+app-text/mupdf X
 app-text/texlive context cjk xetex epspdf extra l10n_zh graphics science
 app-text/texlive-core xetex cjk detex
 dev-cpp/cairomm X
@@ -18,7 +19,7 @@ media-plugins/alsa-plugins pulseaudio
 net-im/pidgin gtk
 net-misc/aria2 bittorrent
 net-print/hplip hpcups scanner
-sys-apps/systemd policykit
+sys-apps/systemd cgroup-hybrid policykit
 sys-boot/refind ntfs
 sys-devel/gcc -gcj
 sys-libs/glibc debug
