@@ -18,6 +18,7 @@ media-plugins/alsa-plugins pulseaudio
 net-im/pidgin gtk
 net-misc/aria2 bittorrent
 net-print/hplip hpcups scanner
+sys-apps/systemd policykit
 sys-boot/refind ntfs
 sys-devel/gcc -gcj
 sys-libs/glibc debug
