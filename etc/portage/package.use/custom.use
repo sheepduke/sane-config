@@ -11,6 +11,7 @@ dev-cpp/cairomm X
 dev-java/icedtea-bin -alsa -cups -pulseaudio -webstart source
 dev-java/openjdk source
 dev-lang/ruby -berkdb -gdbm -ipv6 -rdoc ssl
+dev-util/android-studio custom-jdk
 mail-mta/msmtp mta nls ssl
 media-gfx/imagemagick jpeg png raw svg tiff
 media-libs/freetype -bindist infinality
@@ -24,5 +25,7 @@ sys-boot/refind ntfs
 sys-devel/gcc -gcj
 sys-libs/glibc debug
 sys-libs/zlib static-libs
+virtual/wine abi_x86_32
 www-apps/nextcloud sqlite postgres vhosts
+x11-base/xcb-proto abi_x86_32
 x11-terms/rxvt-unicode focused-urgency font-styles mousewheel startup-notificatoin -vanilla 256-color blink buffer-on-clear wcwidth xft
