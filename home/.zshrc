@@ -122,6 +122,10 @@ export PATH="$PATH:$GOPATH/bin"
 # Arduino
 export ARDUINO_SKETCHBOOK="$HOME/lib/arduino"
 
+# Android
+export ANDROID_HOME="$HOME/android/sdk"
+export PATH="$PATH:$HOME/android/flutter/bin"
+
 # Ruby
 export GEM_HOME="$HOME/lib/ruby"
 PATH="$PATH:${GEM_HOME}/bin"
