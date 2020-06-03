@@ -22,11 +22,19 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
-# These shall be started via user-level services.
-# 
+## These shall be started via user-level services.
+##
 # syncthing --no-browser &
 # pulseaudio --start &
 # dunst &
+
+## Language settings.
+## 
+export GTK_IM_MODULE="ibus"
+export QT_IM_MODULE="ibus"
+export XMODIFIERS="@im=ibus"
+export XIM="ibus"
+export XIM_PROGRAM="ibus"
 
 ibus-daemon -rdx
 unclutter -display $DISPLAY -idle 1 &

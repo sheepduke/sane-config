@@ -11,12 +11,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # Language settings.
 export LANG=en_US.UTF-8
 export LC_CTYPE="zh_CN.UTF-8"
-export GTK_IM_MODULE="ibus"
-export QT_IM_MODULE="ibus"
-export XMODIFIERS="@im=ibus"
-
-# export XIM=ibus
-# export XIM_PROGRAM=ibus
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
