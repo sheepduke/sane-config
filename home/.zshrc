@@ -119,7 +119,9 @@ export ARDUINO_SKETCHBOOK="$HOME/lib/arduino"
 # Android
 export ANDROID_HOME="$HOME/android/sdk"
 export PATH="$PATH:$HOME/android/flutter/bin"
-
+export PUB_HOSTED_URL="https://pub.flutter-io.cn"
+export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
+ 
 # Ruby
 export GEM_HOME="$HOME/lib/ruby"
 PATH="$PATH:${GEM_HOME}/bin"
