@@ -29,3 +29,4 @@ virtual/wine abi_x86_32
 www-apps/nextcloud sqlite postgres vhosts
 x11-base/xcb-proto abi_x86_32
 x11-terms/rxvt-unicode focused-urgency font-styles mousewheel startup-notificatoin -vanilla 256-color blink buffer-on-clear wcwidth xft
+media-gfx/gthumb exif jpeg raw svg tiff webp
