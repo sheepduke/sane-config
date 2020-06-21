@@ -13,7 +13,7 @@ dev-java/openjdk source
 dev-lang/ruby -berkdb -gdbm -ipv6 -rdoc ssl
 dev-util/android-studio custom-jdk
 mail-mta/msmtp mta nls ssl
-media-gfx/imagemagick jpeg png raw svg tiff
+media-gfx/imagemagick jpeg png raw svg tiff xml
 media-libs/freetype -bindist infinality
 media-libs/libcanberra alsa
 media-plugins/alsa-plugins pulseaudio
