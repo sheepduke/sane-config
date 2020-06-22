@@ -18,6 +18,7 @@ app-text/tree
 dev-lang/rust-bin
 dev-vcs/git
 net-misc/connect
+net-misc/dhcp
 net-misc/networkmanager
 net-misc/proxychains
 net-p2p/syncthing
