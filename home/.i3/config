@@ -8,6 +8,8 @@
 
 # Set master key.
 set $mod            Mod4
+set $ctrl           Control
+set $alt            Mod1
 
 # Vim like movement.
 set $left           h
@@ -64,8 +66,8 @@ bindsym $mod + Shift + a                focus child
 
 
 # Enable use of window register.
-bindsym $mod + i                        move scratchpad
-bindsym $mod + Shift + i                scratchpad show 
+bindsym $mod + i                        scratchpad show 
+bindsym $mod + Shift + i                move scratchpad
 
 # Focus workspace N.
 bindsym $mod + 1                        workspace 1
