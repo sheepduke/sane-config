@@ -1,6 +1,6 @@
 app-admin/keepassxc browser -network
 app-arch/p7zip rar
-app-editors/emacs dynamic-loading gif gtk imagemagick inotify jpeg libxml2 png svg tiff X xft zlib
+app-editors/emacs dynamic-loading gif gtk gui imagemagick inotify jpeg libxml2 png svg tiff X xft zlib
 app-emulation/virtualbox qt5
 app-i18n/ibus -emoji gtk python
 app-office/libreoffice-l10n linguas_zh_CN
