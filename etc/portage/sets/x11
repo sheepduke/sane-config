@@ -1,21 +1,11 @@
-# System becomes more handy with these apps.
+# Applications running under X system.
 app-admin/keepassxc
-app-dicts/aspell-en
-app-dicts/stardict-langdao-en-zh-gb
-app-dicts/stardict-langdao-zh-en-gb
-app-editors/emacs
-app-emacs/ebuild-mode
 app-i18n/ibus-rime
-app-misc/icdiff
 app-office/libreoffice-bin
 app-text/mupdf
 app-text/pdftk
 app-text/poppler
-app-text/sdcv
-dev-db/sqlite
 dev-util/android-tools
-mail-filter/procmail
-mail-mta/msmtp
 media-fonts/dejavu
 media-fonts/font-adobe-75dpi
 media-fonts/font-alias
@@ -29,11 +19,7 @@ media-gfx/scrot
 media-sound/pavucontrol
 media-sound/pulseaudio
 media-video/mpv
-net-fs/sshfs
-net-mail/getmail
-net-mail/notmuch
 www-client/firefox
-www-client/w3m
 x11-apps/setxkbmap
 x11-apps/xinput
 x11-apps/xrandr
@@ -49,3 +35,4 @@ x11-misc/xbindkeys
 x11-misc/xclip
 x11-terms/rxvt-unicode
 x11-wm/i3
+x11-misc/i3status

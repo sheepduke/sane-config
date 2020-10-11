@@ -20,10 +20,6 @@ dev-vcs/git
 net-misc/connect
 net-misc/dhcp
 net-misc/networkmanager
-net-misc/proxychains
-net-p2p/syncthing
-net-proxy/privoxy
-net-proxy/shadowsocks-libev
 sys-apps/mlocate
 sys-apps/most
 sys-apps/ripgrep
@@ -35,4 +31,5 @@ sys-fs/exfat-utils
 sys-fs/ntfs3g
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
+sys-process/cronie
 sys-process/htop
