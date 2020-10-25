@@ -20,9 +20,12 @@ dev-vcs/git
 net-misc/connect
 net-misc/dhcp
 net-misc/networkmanager
+sys-apps/hdparm
 sys-apps/mlocate
 sys-apps/most
 sys-apps/ripgrep
+sys-apps/smartmontools
+sys-apps/usbutils
 sys-block/parted
 sys-boot/efibootmgr
 sys-boot/refind
@@ -33,3 +36,4 @@ sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-process/cronie
 sys-process/htop
+sys-process/lsof

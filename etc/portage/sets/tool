@@ -19,6 +19,5 @@ net-p2p/syncthing
 net-proxy/privoxy
 net-proxy/shadowsocks-libev
 www-client/w3m
-sys-apps/usbutils
 sys-fs/mergerfs
 sys-fs/ncdu
