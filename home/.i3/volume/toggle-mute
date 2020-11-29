@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sinks=$(pactl list sinks short | cut -f 1)
+
+for it in $sources
+do
+    pactl set-sink-mute $it toggle
+done

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+volume=$1
+
+sinks=$(pactl list sinks short | cut -f 1)
+
+for it in $sinks
+do
+    pactl set-sink-volume $it $volume
+done

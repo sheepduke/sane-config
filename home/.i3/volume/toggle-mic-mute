@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sources=$(pactl list sources short | cut -f 1)
+
+for it in $sources
+do
+    pactl set-source-mute $it toggle
+done
