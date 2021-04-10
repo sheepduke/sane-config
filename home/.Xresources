@@ -6,7 +6,7 @@
 ! Xft.dpi: 192
 
 ! URxvt
-urxvt*font: xft:DejaVu Sans Mono:size=27, xft:WenQuanYi Micro Hei Mono:size=27
+urxvt*font: xft:DejaVu Sans Mono:size=12, xft:WenQuanYi Micro Hei Mono:size=12
 urxvt.scrollBar: false
 urxvt.letterSpace: -1
 
@@ -16,53 +16,42 @@ urxvt.letterSpace: -1
 !                                Theme
 ! ----------------------------------------------------------------------
 
-! My theme
-! 0-7 are normal colors.
-! 8-15 are bright colors for highlighting.
-! 
-*background:   #f8f8ff
-*foreground:   #000000
-*cursorColor:  #9400d3
+! Access the following URL for a full list of X11 colors.
+! https://en.wikipedia.org/wiki/X11_color_names#Clashes_between_web_and_X11_colors_in_the_CSS_color_scheme
+! Each pair is color and its bright version.
 
-! Black + DarkGrey
-*color0:  #000000
-*color8:  #555753
-! DarkRed + Red
-*color1:  #ff6565
-*color9:  #ff8d8d
-! DarkGreen + Green
-*color2:  #32cd32
-*color10: #228b22
-! DarkYellow + Yellow
-*color3:  #eab93d
-*color11: #ffc123
-! DarkBlue + Blue
-*color4:  #204a87
-*color12: #3465a4
-! DarkMagenta + Magenta
-*color5:  #ce5c00
-*color13: #f57900
-! DarkCyan + Cyan (both not tango)
-*color6:  #89b6e2
-*color14: #46a4ff
-! LightGrey + White
-*color7:  #cccccc
-*color15: #ffffff
+*background: #DCDCDC
+*foreground: #000000
+*cursorColor: #00bfff
 
-! Default
-! *color0:  #2E3436
-! *color1:  #a40000
-! *color2:  #4E9A06
-! *color3:  #C4A000
-! *color4:  #3465A4
-! *color5:  #75507B
-! *color6:  #ce5c00
-! *color7:  #babdb9
-! *color8:  #555753
-! *color9:  #EF2929
-! *color10: #8AE234
-! *color11: #FCE94F
-! *color12: #729FCF
-! *color13: #AD7FA8
-! *color14: #fcaf3e
-! *color15: #EEEEEC
+! black
+*.color0: #263640
+*.color8: ##4a697d
+
+! red
+*.color1: #d12f2c
+*.color9: #fa3935
+
+! green
+*.color2: #2E8B57
+*.color10: #2E8B57
+
+! yellow
+*.color3: #b08500
+*.color11: #d9a400
+
+! blue
+*.color4: #2587cc
+*.color12: #2ca2f5
+
+! magenta
+*.color5: #696ebf
+*.color13: #8086e8
+
+! cyan
+*.color6: #289c93
+*.color14: #33c5ba
+
+! white
+*.color7: #bfbaac
+*.color15: #fdf6e3
