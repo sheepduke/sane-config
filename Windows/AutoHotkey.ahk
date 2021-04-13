@@ -147,8 +147,8 @@ return
 
 #IfWinActive
 
-; S-C => Close window.
-#+c::Send !{F4}
+; S-q => Close window.
+#q::Send !{F4}
 
 ; C-M-C => Show window class.
 ^!+c::
