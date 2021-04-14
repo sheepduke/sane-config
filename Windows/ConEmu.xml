@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2020-04-27 09:58:11" build="191012">
+		<key name=".Vanilla" modified="2021-04-14 10:21:11" build="210314">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -10,22 +10,22 @@
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
-			<value name="ColorTable00" type="dword" data="0036342e"/>
-			<value name="ColorTable01" type="dword" data="00a46534"/>
-			<value name="ColorTable02" type="dword" data="00069a4e"/>
-			<value name="ColorTable03" type="dword" data="009a9806"/>
-			<value name="ColorTable04" type="dword" data="000000cc"/>
-			<value name="ColorTable05" type="dword" data="007b5075"/>
-			<value name="ColorTable06" type="dword" data="0000a0c4"/>
-			<value name="ColorTable07" type="dword" data="00cfd7d3"/>
-			<value name="ColorTable08" type="dword" data="00535755"/>
-			<value name="ColorTable09" type="dword" data="00cf9f72"/>
-			<value name="ColorTable10" type="dword" data="0034e28a"/>
-			<value name="ColorTable11" type="dword" data="00e2e234"/>
-			<value name="ColorTable12" type="dword" data="002929ef"/>
-			<value name="ColorTable13" type="dword" data="00a87fad"/>
-			<value name="ColorTable14" type="dword" data="004fe9fc"/>
-			<value name="ColorTable15" type="dword" data="00eceeee"/>
+			<value name="ColorTable00" type="dword" data="00e9e9e9"/>
+			<value name="ColorTable01" type="dword" data="00ff6565"/>
+			<value name="ColorTable02" type="dword" data="0028a428"/>
+			<value name="ColorTable03" type="dword" data="00c08000"/>
+			<value name="ColorTable04" type="dword" data="000606ff"/>
+			<value name="ColorTable05" type="dword" data="00ce5c00"/>
+			<value name="ColorTable06" type="dword" data="0089b6e2"/>
+			<value name="ColorTable07" type="dword" data="00000000"/>
+			<value name="ColorTable08" type="dword" data="00ffffff"/>
+			<value name="ColorTable09" type="dword" data="00ff0080"/>
+			<value name="ColorTable10" type="dword" data="00228b22"/>
+			<value name="ColorTable11" type="dword" data="00ffc123"/>
+			<value name="ColorTable12" type="dword" data="003465a4"/>
+			<value name="ColorTable13" type="dword" data="00f57900"/>
+			<value name="ColorTable14" type="dword" data="00006bac"/>
+			<value name="ColorTable15" type="dword" data="00555753"/>
 			<value name="TextColorIdx" type="hex" data="10"/>
 			<value name="BackColorIdx" type="hex" data="10"/>
 			<value name="PopTextColorIdx" type="hex" data="10"/>
@@ -49,7 +49,7 @@
 			<value name="ClipboardDeleteLeftWord" type="hex" data="02"/>
 			<value name="TrueColorerSupport" type="hex" data="01"/>
 			<value name="VividColors" type="hex" data="01"/>
-			<value name="FadeInactive" type="hex" data="01"/>
+			<value name="FadeInactive" type="hex" data="00"/>
 			<value name="FadeInactiveLow" type="hex" data="00"/>
 			<value name="FadeInactiveHigh" type="hex" data="D0"/>
 			<value name="ConVisible" type="hex" data="00"/>
@@ -83,6 +83,14 @@
 			<value name="JumpListAutoUpdate" type="hex" data="01"/>
 			<value name="SaveCmdHistory" type="hex" data="01"/>
 			<value name="CmdLineHistory" type="multi">
+				<line data="{Tools::Chocolatey (Admin)}"/>
+				<line data="{Helper::Show ANSI colors}"/>
+				<line data="{ExchangeShell}"/>
+				<line data="{Torus::PROD_DMS}"/>
+				<line data="{Torus::PROD_Forest}"/>
+				<line data="{Work::PFGold}"/>
+				<line data="{Work::VS Developer}"/>
+				<line data="{VisualStudio::Developer}"/>
 				<line data="{Substrate}"/>
 				<line data="{Shells::PowerShell (Admin)}"/>
 				<line data="{Bash::Msys2-64}"/>
@@ -141,11 +149,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="38"/>
-			<value name="ConWnd Y" type="long" data="0"/>
-			<value name="LastMonitor" type="string" data="0,90,3840,2160"/>
-			<value name="ConWnd Width" type="dword" data="00000058"/>
-			<value name="ConWnd Height" type="dword" data="0000001c"/>
+			<value name="ConWnd X" type="long" data="24"/>
+			<value name="ConWnd Y" type="long" data="38"/>
+			<value name="LastMonitor" type="string" data="0,38,2560,1440"/>
+			<value name="ConWnd Width" type="dword" data="0000007f"/>
+			<value name="ConWnd Height" type="dword" data="00000027"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
@@ -408,7 +416,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2020-02-19 23:53:11" build="191012">
+			<key name="HotKeys" modified="2021-04-14 10:10:58" build="210314">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="000000a2"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -603,9 +611,11 @@
 				<value name="DndLKey" type="hex" data="00"/>
 				<value name="DndRKey" type="hex" data="A2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
+				<value name="Key.EditMenu" type="dword" data="00000000"/>
+				<value name="Key.EditMenu2" type="dword" data="00000000"/>
 			</key>
-			<key name="Tasks" modified="2020-03-26 18:27:36" build="191012">
-				<value name="Count" type="long" data="11"/>
+			<key name="Tasks" modified="2021-04-14 10:12:29" build="210314">
+				<value name="Count" type="long" data="15"/>
 				<key name="Task1" modified="2020-03-02 14:58:49" build="191012">
 					<value name="Name" type="string" data="{PowerShell}"/>
 					<value name="Flags" type="dword" data="00000004"/>
@@ -633,62 +643,97 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='set CHERE_INVOKING=1 &amp; set "PATH=%MSYS2%\usr\bin;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-msys2-64.exe -new_console:p %MSYS2%\usr\bin\bash.exe --login -i -new_console:C:"%MSYS2%\msys2.ico"'/>
 				</key>
-				<key name="Task4" modified="2020-03-26 18:27:36" build="191012">
-					<value name="Name" type="string" data="{Substrate}"/>
+				<key name="Task4" modified="2020-09-17 13:01:51" build="200713">
+					<value name="Name" type="string" data="{Substrate::1}"/>
 					<value name="Flags" type="dword" data="00000004"/>
-					<value name="Hotkey" type="dword" data="00001253"/>
+					<value name="Hotkey" type="dword" data="00101231"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data="cmd.exe /k SET INETROOT=D:\repo\s\src&amp;cd /d D:\repo\s\src&amp;gvfs mount&amp;D:\repo\s\src\tools\path1st\myenv.cmd  -new_console:a"/>
+					<value name="Cmd1" type="string" data="cmd.exe /k SET INETROOT=C:\repo\s1\src&amp;cd /d C:\repo\s1\src&amp;gvfs mount&amp;C:\repo\s1\src\tools\path1st\myenv.cmd   -new_console:a"/>
 				</key>
-				<key name="Task5" modified="2020-03-26 18:27:36" build="191012">
-					<value name="Name" type="string" data="{Shells::cmd}"/>
-					<value name="Flags" type="dword" data="00000002"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
+				<key name="Task5" modified="2020-09-24 11:27:07" build="200713">
+					<value name="Name" type="string" data="{Substrate::2}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00101232"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"'/>
+					<value name="Cmd1" type="string" data="cmd.exe /k SET INETROOT=C:\repo\s2\src&amp;cd /d C:\repo\s2\src&amp;gvfs mount&amp;C:\repo\s2\src\tools\path1st\myenv.cmd   -new_console:a"/>
 				</key>
-				<key name="Task6" modified="2020-03-26 18:27:36" build="191012">
-					<value name="Name" type="string" data="{Shells::cmd (Admin)}"/>
+				<key name="Task6" modified="2020-10-12 14:08:29" build="200713">
+					<value name="Name" type="string" data="{Substrate::3}"/>
 					<value name="Flags" type="dword" data="00000004"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="Hotkey" type="dword" data="00101233"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd" -new_console:a'/>
+					<value name="Cmd1" type="string" data="cmd.exe /k SET INETROOT=C:\repo\s3\src&amp;cd /d C:\repo\s3\src&amp;gvfs mount&amp;C:\repo\s3\src\tools\path1st\myenv.cmd   -new_console:a"/>
 				</key>
-				<key name="Task7" modified="2020-03-26 18:27:36" build="191012">
-					<value name="Name" type="string" data="{Shells::cmd-32}"/>
+				<key name="Task7" modified="2020-10-12 14:08:29" build="200713">
+					<value name="Name" type="string" data="{Substrate::4}"/>
 					<value name="Flags" type="dword" data="00000004"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="Hotkey" type="dword" data="00101234"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='"%windir%\syswow64\cmd.exe" /k "%ConEmuBaseDir%\CmdInit.cmd"'/>
+					<value name="Cmd1" type="string" data="cmd.exe /k SET INETROOT=C:\repo\s4\src&amp;cd /d C:\repo\s4\src&amp;gvfs mount&amp;C:\repo\s4\src\tools\path1st\myenv.cmd   -new_console:a"/>
 				</key>
-				<key name="Task8" modified="2020-03-26 18:27:36" build="191012">
-					<value name="Name" type="string" data="{Shells::cmd 64/32}"/>
-					<value name="Flags" type="dword" data="00000004"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
-					<value name="GuiArgs" type="string" data=""/>
-					<value name="Active" type="long" data="1"/>
-					<value name="Count" type="long" data="2"/>
-					<value name="Cmd1" type="string" data='&gt; "%windir%\system32\cmd.exe" /k ""%ConEmuBaseDir%\CmdInit.cmd" &amp; echo This is Native cmd.exe"'/>
-					<value name="Cmd2" type="string" data='"%windir%\syswow64\cmd.exe" /k ""%ConEmuBaseDir%\CmdInit.cmd" &amp; echo This is 32 bit cmd.exe -new_console:s50V"'/>
-				</key>
-				<key name="Task9" modified="2020-03-26 18:27:36" build="191012">
-					<value name="Name" type="string" data="{Bash::Git bash}"/>
+				<key name="Task8" modified="2021-04-14 10:12:29" build="210314">
+					<value name="Name" type="string" data="{Torus::PROD_Forest}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='set "PATH=%ConEmuDir%\..\Git\usr\bin;%PATH%" &amp; %ConEmuDir%\..\Git\git-cmd.exe --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i -new_console:p'/>
+					<value name="Cmd1" type="string" data='%SYSTEMDRIVE%\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -executionpolicy remotesigned -command "&amp;C:\Torus\TorusClient.ps1 -Mode connect -ServiceInstance MultiTenant -UserType OCE -CapacityOnly" -new_console:a'/>
 				</key>
-				<key name="Task10" modified="2020-03-26 18:27:36" build="191012">
+				<key name="Task9" modified="2021-04-14 10:12:29" build="210314">
+					<value name="Name" type="string" data="{Torus::PROD_DMS}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data='%SYSTEMDRIVE%\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -executionpolicy remotesigned -command "&amp;C:\Torus\TorusClient.ps1 -Mode connect -ServiceInstance MultiTenant -UserType OCE -CapacityDMS" -new_console:a'/>
+				</key>
+				<key name="Task10" modified="2021-04-14 10:12:29" build="210314">
+					<value name="Name" type="string" data="{Work::VS Developer}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data='C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -noe -c "&amp;{Import-Module """C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\Microsoft.VisualStudio.DevShell.dll"""; Enter-VsDevShell 3c6846c8}" -new_console:a'/>
+				</key>
+				<key name="Task11" modified="2021-04-14 10:12:29" build="210314">
+					<value name="Name" type="string" data="{Work::PFGold}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data="C:\WINDOWS\system32\cmd.exe /k set inetroot=c:\repo\pfgold&amp;set corextbranch=pfgold_small&amp;c:\repo\pfgold\tools\path1st\myenv.cmd -new_console:a"/>
+				</key>
+				<key name="Task12" modified="2021-04-14 10:12:29" build="210314">
+					<value name="Name" type="string" data="{Work::Griffin}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data="C:\WINDOWS\system32\cmd.exe /k SET INETROOT=C:\repo\griffin&amp;C:\repo\griffin\tools\path1st\myenv.cmd&amp;cd C:\repo\griffin&amp;C:  -new_console:a"/>
+				</key>
+				<key name="Task13" modified="2021-04-14 10:12:29" build="210314">
+					<value name="Name" type="string" data="{TDS::ExchangeShell}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data='C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command ". &apos;C:\Program Files\Microsoft\Exchange Server\V15\bin\RemoteExchange.ps1&apos;; Connect-ExchangeServer -auto -ClientApplication:ManagementShell"  -new_console:a'/>
+				</key>
+				<key name="Task14" modified="2021-04-14 10:12:29" build="210314">
 					<value name="Name" type="string" data="{Helper::Show ANSI colors}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -697,7 +742,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='cmd.exe /k type "%ConEmuBaseDir%\Addons\AnsiColors16t.ans" -cur_console:n'/>
 				</key>
-				<key name="Task11" modified="2020-03-26 18:27:36" build="191012">
+				<key name="Task15" modified="2021-04-14 10:12:29" build="210314">
 					<value name="Name" type="string" data="{Tools::Chocolatey (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -710,9 +755,33 @@
 			<key name="Apps" modified="2020-02-19 23:53:11" build="191012">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<key name="Colors" modified="2020-02-19 23:53:11" build="191012">
-				<value name="Count" type="long" data="0"/>
+			<key name="Colors" modified="2021-04-14 10:01:10" build="210314">
+				<value name="Count" type="long" data="1"/>
+				<key name="Palette1" modified="2021-04-14 10:17:30" build="210314">
+					<value name="Name" type="string" data="MyTheme"/>
+					<value name="TextColorIdx" type="hex" data="10"/>
+					<value name="BackColorIdx" type="hex" data="10"/>
+					<value name="PopTextColorIdx" type="hex" data="10"/>
+					<value name="PopBackColorIdx" type="hex" data="10"/>
+					<value name="ColorTable00" type="dword" data="00cccccc"/>
+					<value name="ColorTable01" type="dword" data="00ff6565"/>
+					<value name="ColorTable02" type="dword" data="0028a428"/>
+					<value name="ColorTable03" type="dword" data="00eab93d"/>
+					<value name="ColorTable04" type="dword" data="000606ff"/>
+					<value name="ColorTable05" type="dword" data="00ce5c00"/>
+					<value name="ColorTable06" type="dword" data="0089b6e2"/>
+					<value name="ColorTable07" type="dword" data="00000000"/>
+					<value name="ColorTable08" type="dword" data="00ffffff"/>
+					<value name="ColorTable09" type="dword" data="00ff8d8d"/>
+					<value name="ColorTable10" type="dword" data="00228b22"/>
+					<value name="ColorTable11" type="dword" data="00ffc123"/>
+					<value name="ColorTable12" type="dword" data="003465a4"/>
+					<value name="ColorTable13" type="dword" data="00f57900"/>
+					<value name="ColorTable14" type="dword" data="00006bac"/>
+					<value name="ColorTable15" type="dword" data="00555753"/>
+				</key>
 			</key>
+			<value name="ResetTerminalConfirm" type="hex" data="01"/>
 		</key>
 	</key>
 </key>
