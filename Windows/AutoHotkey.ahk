@@ -22,7 +22,11 @@ IsVirtualConsoleWindow() {
 }
 
 IsPowerShellWindow() {
-    return WinActive("powershell") or WinActive("Windows PowerShell (Admin)")
+    return WinActive("powershell") or WinActive("Windows PowerShell (Admin)") or WinActive("Windows PowerShell ISE")
+}
+
+IsPowerShellIseWindow() {
+    return WinActive("Windows PowerShell ISE")
 }
 
 IsConsoleWindow() {
@@ -36,6 +40,10 @@ IsOneNoteWindow() {
 
 IsFirefoxWindow() {
     return WinActive("ahk_class MozillaWindowClass")
+}
+
+IsEdgeWindow() {
+    return WinActive("ahk_class Chrome_WidgetWin_1")
 }
 
 KillLine() {
@@ -117,7 +125,7 @@ return
 ;;                            OneNote                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsOneNoteWindow()
+#if IsOneNoteWindow() or IsPowerShellIseWindow()
 
 ^K::KillLine()
 !+.::Send ^{End}
@@ -126,10 +134,10 @@ return
 !v::Send {PgUp}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;                            Firefox                               ;;
+;;                            Browser                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsFirefoxWindow()
+#if IsFirefoxWindow() or IsEdgeWindow()
 
 !1::Send ^1
 !2::Send ^2
