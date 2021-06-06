@@ -10,13 +10,16 @@ app-text/texlive-core xetex cjk detex
 dev-cpp/cairomm X
 dev-java/icedtea-bin -alsa -cups -pulseaudio -webstart source
 dev-java/openjdk source
+dev-lang/erlang doc
 dev-lang/ruby -berkdb -gdbm -ipv6 -rdoc ssl
 dev-util/android-studio custom-jdk
 mail-mta/msmtp mta nls ssl
+media-gfx/gthumb exif jpeg raw svg tiff webp
 media-gfx/imagemagick jpeg png raw svg tiff xml
 media-libs/freetype -bindist infinality
 media-libs/libcanberra alsa
 media-plugins/alsa-plugins pulseaudio
+media-sound/pulseaudio bluetooth native-headset ofono-headset
 net-im/pidgin gtk
 net-misc/aria2 bittorrent
 net-print/hplip hpcups scanner
@@ -29,4 +32,3 @@ virtual/wine abi_x86_32
 www-apps/nextcloud sqlite postgres vhosts
 x11-base/xcb-proto abi_x86_32
 x11-terms/rxvt-unicode focused-urgency font-styles mousewheel startup-notificatoin -vanilla 256-color blink buffer-on-clear wcwidth xft
-media-gfx/gthumb exif jpeg raw svg tiff webp
