@@ -16,6 +16,7 @@
     fa = fetch -a
     lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     re = rebase
+    rs = restore
     st = status --ahead-behind
     stu = status --ahead-behind -uno
     sw = switch
