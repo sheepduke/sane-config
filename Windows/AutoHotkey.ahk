@@ -13,24 +13,17 @@
 ;;                            Utilities                             ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-IsCmdWindow() {
-    return WinActive("ahk_class ConsoleWindowClass")
-}
-
-IsVirtualConsoleWindow() {
-    return WinActive("ahk_class VirtualConsoleClass")
-}
-
 IsPowerShellWindow() {
-    return WinActive("powershell") or WinActive("Windows PowerShell (Admin)") or WinActive("Windows PowerShell ISE")
+    return WinActive("ahk_class VirtualConsoleClass")
 }
 
 IsPowerShellIseWindow() {
     return WinActive("Windows PowerShell ISE")
 }
 
-IsConsoleWindow() {
-    return IsCmdWindow() or IsPowerShellWindow() or IsVirtualConsoleWindow()
+IsWslWindow() {
+    SetTitleMatchMode 2
+    return (WinActive("~") || WinActive("/")) && !WinActive("EXCHANGE")
 }
 
 IsOneNoteWindow() {
@@ -53,10 +46,10 @@ KillLine() {
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;                              Basic                               ;;
+;;                              Shell                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsConsoleWindow() or IsOneNoteWindow()
+#if IsPowerShellWindow() && !IsWslWindow()
 
 ; C-f => Forward char.
 ^F::Send {Right}
@@ -102,23 +95,10 @@ KillLine() {
 ; C-g => Cancel.
 ^G::Send {Esc}
 
-#if IsConsoleWindow()
+; C-u => Cancel.
 ^U::Send {Esc}
 
-#if IsCmdWindow()
-^K::
-Send {Left}
-Send +{Home}
-Click right
-Send {Esc}
-Click right
-return
-
-#if IsPowerShellWindow()
 ; C-k => Kill line.
-^k::KillLine()
-
-#if IsVirtualConsoleWindow() or IsPowerShellWindow()
 ^K::KillLine()
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
