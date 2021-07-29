@@ -23,7 +23,7 @@ IsPowerShellIseWindow() {
 
 IsWslWindow() {
     SetTitleMatchMode 2
-    return (WinActive("~") || WinActive("/")) && !WinActive("EXCHANGE")
+    return (WinActive("~") || WinActive("/") || WinActive("tmux")) && !WinActive("EXCHANGE")
 }
 
 IsOneNoteWindow() {
