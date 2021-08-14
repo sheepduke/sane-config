@@ -16,6 +16,7 @@ dev-util/android-studio custom-jdk
 mail-mta/msmtp mta nls ssl
 media-gfx/gthumb exif jpeg raw svg tiff webp
 media-gfx/imagemagick jpeg png raw svg tiff xml
+media-gfx/xsane gimp jpeg png
 media-libs/freetype -bindist infinality
 media-libs/libcanberra alsa
 media-plugins/alsa-plugins pulseaudio
