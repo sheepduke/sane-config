@@ -20,38 +20,64 @@ urxvt.letterSpace: -1
 ! https://en.wikipedia.org/wiki/X11_color_names#Clashes_between_web_and_X11_colors_in_the_CSS_color_scheme
 ! Each pair is color and its bright version.
 
-*background: #DCDCDC
-*foreground: #000000
-*cursorColor: #00bfff
+! ---------- Light ----------
 
-! black
-*.color0: #263640
-*.color8: ##4a697d
+! *background: #DCDCDC
+! *foreground: #000000
+! *cursorColor: #00bfff
 
-! red
-*.color1: #d12f2c
-*.color9: #fa3935
+! ! black
+! *.color0: #263640
+! *.color8: ##4a697d
 
-! green
-*.color2: #2E8B57
-*.color10: #2E8B57
+! ! red
+! *.color1: #d12f2c
+! *.color9: #fa3935
 
-! yellow
-*.color3: #b08500
-*.color11: #d9a400
+! ! green
+! *.color2: #2E8B57
+! *.color10: #2E8B57
 
-! blue
-*.color4: #2587cc
-*.color12: #2ca2f5
+! ! yellow
+! *.color3: #b08500
+! *.color11: #d9a400
 
-! magenta
-*.color5: #696ebf
-*.color13: #8086e8
+! ! blue
+! *.color4: #2587cc
+! *.color12: #2ca2f5
 
-! cyan
-*.color6: #289c93
-*.color14: #33c5ba
+! ! magenta
+! *.color5: #696ebf
+! *.color13: #8086e8
 
-! white
-*.color7: #bfbaac
-*.color15: #fdf6e3
+! ! cyan
+! *.color6: #289c93
+! *.color14: #33c5ba
+
+! ! white
+! *.color7: #bfbaac
+! *.color15: #fdf6e3
+
+
+! ---------- Dark ----------
+
+*background:   #282a36
+*foreground:   #eff0eb
+*cursorColor:  #9aedfe
+
+*color0:      #33303b
+*color8:      #4f4b58
+*color1:      #ff5c57
+*color9:      #ff5c57
+*color2:      #5af78e
+*color10:     #5af78e
+*color3:      #f3f99d
+*color11:     #f3f99d
+*color4:      #57c7ff
+*color12:     #57c7ff
+*color5:      #ff6ac1
+*color13:     #ff6ac1
+*color6:      #9aedfe
+*color14:     #9aedfe
+*color7:      #eff0eb
+*color15:     #eff0eb
