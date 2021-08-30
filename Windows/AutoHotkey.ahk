@@ -26,6 +26,10 @@ IsWslWindow() {
     return (WinActive("~") || WinActive("/") || WinActive("tmux")) && !WinActive("EXCHANGE")
 }
 
+IsNuShellWindow() {
+    return WinActive("nu")
+}
+
 IsOneNoteWindow() {
     SetTitleMatchMode 2
     return WinActive("OneNote")
@@ -49,7 +53,7 @@ KillLine() {
 ;;                              Shell                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsPowerShellWindow() && !IsWslWindow()
+#if IsPowerShellWindow() && !IsWslWindow() && !IsNuShellWindow()
 
 ; C-f => Forward char.
 ^F::Send {Right}
