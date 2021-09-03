@@ -14,7 +14,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 IsPowerShellWindow() {
-    return WinActive("ahk_class VirtualConsoleClass")
+    SetTitleMatchMode 2
+    return WinActive("Windows PowerShell")
 }
 
 IsPowerShellIseWindow() {
