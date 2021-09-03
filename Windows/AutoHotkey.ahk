@@ -15,7 +15,7 @@
 
 IsPowerShellWindow() {
     SetTitleMatchMode 2
-    return WinActive("Windows PowerShell")
+    return WinActive("Windows PowerShell") || WinActive("powershell")
 }
 
 IsPowerShellIseWindow() {
