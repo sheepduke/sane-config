@@ -15,20 +15,16 @@
 
 IsPowerShellWindow() {
     SetTitleMatchMode 2
-    return WinActive("Windows PowerShell") || WinActive("powershell") || WinActive("EXCHANGE")
+    return WinActive("ahk_class CASCADIA_HOSTING_WINDOW_CLASS")
+        && (WinActive("Windows PowerShell")
+            || WinActive("PowerShell")
+            || WinActive("powershell")
+            || WinActive("Capacity DMS")
+            || WinActive("EXCHANGE"))
 }
 
 IsPowerShellIseWindow() {
     return WinActive("Windows PowerShell ISE")
-}
-
-IsWslWindow() {
-    SetTitleMatchMode 2
-    return (WinActive("~") || WinActive("/") || WinActive("tmux")) && !WinActive("EXCHANGE")
-}
-
-IsNuShellWindow() {
-    return WinActive("nu")
 }
 
 IsOneNoteWindow() {
@@ -54,7 +50,7 @@ KillLine() {
 ;;                              Shell                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsPowerShellWindow() && !IsWslWindow() && !IsNuShellWindow()
+#if IsPowerShellWindow() || IsOneNoteWindow()
 
 ; C-f => Forward char.
 ^F::Send {Right}
@@ -142,15 +138,3 @@ KillLine() {
 
 ; S-q => Close window.
 #q::Send !{F4}
-
-; C-M-C => Show window class.
-^!+c::
-WinGetClass, class, A
-MsgBox, The active window's class is "%class%".
-return
-
-; C-M-T => Show window title.
-^!+t::
-WinGetTitle, Title, A
-MsgBox, The active window is "%Title%".
-return
