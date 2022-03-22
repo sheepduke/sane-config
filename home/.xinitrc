@@ -36,9 +36,14 @@ export XMODIFIERS="@im=ibus"
 export XIM="ibus"
 export XIM_PROGRAM="ibus"
 
+xrdb -merge ~/.Xresources
 ibus-daemon -rdx
 unclutter -display $DISPLAY -idle 1 &
-setxkbmap -option "ctrl:nocaps"
-xrdb -merge ~/.Xresources
+# xkbcomp -I$HOME/.config/xkb $HOME/.config/xkb/keymap $DISPLAY
+dunst &
+emacs &
+firefox &
+keepassxc &
+urxvt &
 
-exec i3
+exec xmonad
