@@ -20,7 +20,7 @@ templates:
 # to see the current sequence.
 # stack-colors: STYLES
 
-package-indices: 
+package-indices:
   - download-prefix: http://mirrors.tuna.tsinghua.edu.cn/hackage/
     hackage-security:
         keyids:
@@ -38,8 +38,11 @@ package-indices:
         # ignore expiration date, see https://github.com/commercialhaskell/stack/pull/4614
         ignore-expiry: no
 
-setup-info: "http://mirrors.tuna.tsinghua.edu.cn/stackage/stack-setup.yaml"
+setup-info-locations: ["http://mirrors.tuna.tsinghua.edu.cn/stackage/stack-setup.yaml"]
 urls:
   latest-snapshot: http://mirrors.tuna.tsinghua.edu.cn/stackage/snapshots.json
-  lts-build-plans: http://mirrors.tuna.tsinghua.edu.cn/stackage/lts-haskell/
-  nightly-build-plans: http://mirrors.tuna.tsinghua.edu.cn/stackage/stackage-nightly/
+
+snapshot-location-base: https://mirrors.tuna.tsinghua.edu.cn/stackage/stackage-snapshots/
+
+ghc-options:
+  "*": -j
