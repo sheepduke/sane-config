@@ -1,4 +1,5 @@
 app-admin/keepassxc browser -network
+app-admin/testdisk zlib jpeg ntfs qt5
 app-arch/p7zip rar
 app-editors/emacs dynamic-loading gif gtk gui imagemagick inotify jpeg libxml2 png svg tiff X xft zlib
 app-emulation/virtualbox qt5
