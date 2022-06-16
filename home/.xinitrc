@@ -46,4 +46,4 @@ firefox &
 keepassxc &
 urxvt &
 
-exec xmonad
+exec i3
