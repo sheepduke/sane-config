@@ -1,7 +1,8 @@
 #!/bin/bash
 
-export http_proxy=http://localhost:1070
-export https_proxy=http://localhost:1070
-export no_proxy="localhost, 127.0.0.1, tsinghua.edu.cn"
+export http_proxy=http://localhost:7890
+export https_proxy=http://localhost:7890
+export no_proxy=localhost,127.0.0.1,mirrors.tuna.tsinghua.edu.cn
+export JAVA_OPTS="$JAVA_OPTS -Dhttps.proxyHost=localhost -Dhttps.proxyPort=7890"
 
 $*
