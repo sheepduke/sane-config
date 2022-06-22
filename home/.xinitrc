@@ -36,6 +36,7 @@ export XMODIFIERS="@im=ibus"
 export XIM="ibus"
 export XIM_PROGRAM="ibus"
 
+setxkbmap -option "ctrl:nocaps"
 xrdb -merge ~/.Xresources
 ibus-daemon -rdx
 unclutter -display $DISPLAY -idle 1 &
