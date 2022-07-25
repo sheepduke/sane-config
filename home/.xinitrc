@@ -38,7 +38,7 @@ export XIM_PROGRAM="ibus"
 
 setxkbmap -option "ctrl:nocaps"
 xrdb -merge ~/.Xresources
-ibus-daemon -rdx
+ibus-daemon &
 unclutter -display $DISPLAY -idle 1 &
 # xkbcomp -I$HOME/.config/xkb $HOME/.config/xkb/keymap $DISPLAY
 dunst &
