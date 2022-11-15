@@ -15,7 +15,8 @@
 
 IsPowerShellWindow() {
     SetTitleMatchMode 2
-    return WinActive("ahk_class CASCADIA_HOSTING_WINDOW_CLASS")
+    return (WinActive("ahk_exe WindowsTerminal.exe")
+            || WinActive("ahk_exe powershell.exe"))
         && (WinActive("Windows PowerShell")
             || WinActive("PowerShell")
             || WinActive("powershell")
@@ -28,8 +29,9 @@ IsPowerShellIseWindow() {
 }
 
 IsOneNoteWindow() {
-    SetTitleMatchMode 2
-    return WinActive("OneNote")
+    ; SetTitleMatchMode 2
+    ; return WinActive("OneNote")
+    return WinActive("ahk_exe OneNote.exe")
 }
 
 IsFirefoxWindow() {
@@ -38,6 +40,17 @@ IsFirefoxWindow() {
 
 IsEdgeWindow() {
     return WinActive("ahk_class Chrome_WidgetWin_1")
+}
+
+IsMicrosoftToDoWindow() {
+    return WinActive("Microsoft To Do")
+}
+
+ShouldApplyShellBindings() {
+    return IsPowerShellWindow()
+           || IsPowerShellWindow()
+           || IsOneNoteWindow()
+           || IsMicrosoftToDoWindow()
 }
 
 KillLine() {
@@ -50,7 +63,7 @@ KillLine() {
 ;;                              Shell                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-#if IsPowerShellWindow() || IsOneNoteWindow()
+#if ShouldApplyShellBindings()
 
 ; C-f => Forward char.
 ^F::Send {Right}
@@ -102,17 +115,20 @@ KillLine() {
 ; C-k => Kill line.
 ^K::KillLine()
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;                            OneNote                               ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; C-v => Page down.
+^V::Send {PgDn}
 
-#if IsOneNoteWindow() or IsPowerShellIseWindow()
+; M-v => Page up.
+!V::Send {PgUp}
 
-^K::KillLine()
-!+.::Send ^{End}
-!+,::Send ^{Home}
-^v::Send {PgDn}
-!v::Send {PgUp}
+; C-y => Yank.
+^Y::Send +{Insert}
+
+; M-< => Move to end.
+!>::Send ^{End}
+
+; M-> => Move to beginning.
+!<::Send ^{Home}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                            Browser                               ;;
@@ -138,3 +154,5 @@ KillLine() {
 
 ; S-q => Close window.
 #q::Send !{F4}
+
++Space::Send {Space}
