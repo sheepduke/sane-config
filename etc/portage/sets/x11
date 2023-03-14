@@ -1,6 +1,7 @@
 # Applications running under X system.
 app-admin/keepassxc
-app-i18n/ibus-rime
+app-i18n/fcitx-configtool
+app-i18n/fcitx-rime
 app-office/libreoffice-bin
 app-text/mupdf
 app-text/pdftk
