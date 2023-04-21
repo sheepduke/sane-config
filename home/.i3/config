@@ -146,6 +146,7 @@ mode "resize" {
 
 assign [class="^emacs"]                 1
 assign [class="Firefox"]                2
+assign [class="firefox"]                2
 assign [class="KeePassXC"]              7
 
 ######################################################################

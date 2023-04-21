@@ -38,6 +38,5 @@ dunst &
 emacs &
 firefox &
 keepassxc &
-urxvt &
 
 exec i3
