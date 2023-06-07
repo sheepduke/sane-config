@@ -34,6 +34,6 @@ x11-misc/slock
 x11-misc/unclutter
 x11-misc/xbindkeys
 x11-misc/xclip
-x11-terms/rxvt-unicode
+x11-terms/alacritty
 x11-wm/i3
 x11-misc/i3status

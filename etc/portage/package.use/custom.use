@@ -9,6 +9,7 @@ app-text/mupdf X
 app-text/texlive context cjk xetex epspdf extra l10n_zh graphics science
 app-text/texlive-core xetex cjk detex
 dev-cpp/cairomm X
+dev-dotnet/dotnet-sdk-bin -dotnet-symlink
 dev-java/icedtea-bin -alsa -cups -pulseaudio -webstart source
 dev-java/openjdk source
 dev-lang/erlang doc
@@ -16,6 +17,7 @@ dev-lang/ruby -berkdb -gdbm -ipv6 -rdoc ssl
 dev-libs/gmp static-libs
 dev-util/android-studio custom-jdk
 mail-mta/msmtp mta nls ssl
+media-fonts/nerd-fonts firacode X
 media-gfx/gthumb exif jpeg raw svg tiff webp
 media-gfx/imagemagick jpeg png raw svg tiff xml
 media-gfx/xsane gimp jpeg png
