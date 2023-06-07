@@ -7,19 +7,19 @@ sysmodmap=/etc/X11/xinit/Xmodmap
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
+	xrdb -merge $sysresources
 fi
 
 if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
+	xmodmap $sysmodmap
 fi
 
 if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
+	xrdb -merge "$userresources"
 fi
 
 if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
+	xmodmap "$usermodmap"
 fi
 
 ## These shall be started via user-level services.
@@ -32,7 +32,7 @@ setxkbmap -option "ctrl:nocaps"
 xrdb -merge ~/.Xresources
 # ibus-daemon &
 fcitx5 &
-unclutter -display $DISPLAY -idle 1 &
+# unclutter -display $DISPLAY -idle 1 &
 # xkbcomp -I$HOME/.config/xkb $HOME/.config/xkb/keymap $DISPLAY
 dunst &
 emacs &
