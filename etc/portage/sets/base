@@ -1,7 +1,9 @@
 # It is barely a usable system without these packages.
 app-admin/sudo
 app-arch/p7zip
-app-editors/vim
+app-arch/unrar
+app-editors/neovim
+app-eselect/eselect-repository
 app-misc/tmux
 app-portage/cpuid2cpuflags
 app-portage/eix
