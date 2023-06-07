@@ -7,16 +7,21 @@
     pager = true
 
 [alias]
+    ad = add .
     br = branch
     co = checkout
-    cm = commit
+    cm = commit -m
+    ca = commit -am 
     cp = cherry-pick
     df = diff
     ds = diff --cached
     fa = fetch -a
     lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    p = push
+    pu = push -u origin head
     re = rebase
     rs = restore
+    rt = reset
     st = status --ahead-behind
     stu = status --ahead-behind -uno
     sw = switch
@@ -26,3 +31,5 @@
     
 [include]
     path = .gituser.conf
+[init]
+    defaultBranch = master
