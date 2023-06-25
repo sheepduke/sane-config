@@ -33,3 +33,5 @@
     path = .gituser.conf
 [init]
     defaultBranch = master
+[url "ssh://git@"]
+	insteadOf = https://
