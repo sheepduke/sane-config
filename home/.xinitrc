@@ -35,7 +35,7 @@ fcitx5 &
 # unclutter -display $DISPLAY -idle 1 &
 # xkbcomp -I$HOME/.config/xkb $HOME/.config/xkb/keymap $DISPLAY
 dunst &
-emacs &
+# emacs &
 firefox &
 keepassxc &
 
