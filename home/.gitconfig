@@ -11,14 +11,14 @@
     br = branch
     co = checkout
     cm = commit -m
-    ca = commit -am 
     cp = cherry-pick
     df = diff
     ds = diff --cached
     fa = fetch -a
     lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     p = push
-    pu = push -u origin head
+    po = push origin
+    pu = push -u origin HEAD
     re = rebase
     rs = restore
     rt = reset
@@ -33,5 +33,7 @@
     path = .gituser.conf
 [init]
     defaultBranch = master
-[url "ssh://git@"]
-	insteadOf = https://
+
+
+
+
