@@ -51,7 +51,7 @@ bindsym $mod + v                        split v
 bindsym $mod + Shift + v                split h
 
 # Change container layout (stacked, tabbed, toggle split).
-# bindsym $mod + s                        layout stacking
+bindsym $mod + s                        layout stacking
 bindsym $mod + w                        layout tabbed
 bindsym $mod + e                        layout toggle split
 
@@ -145,8 +145,6 @@ mode "resize" {
 ######################################################################
 
 assign [class="^emacs"]                 1
-assign [class="Firefox"]                2
-assign [class="firefox"]                2
 assign [class="KeePassXC"]              7
 
 ######################################################################
@@ -166,9 +164,6 @@ bar {
 set $screenshot_path          ~/pictures/screenshots/$(date +%Y-%m-%d_%H.%M.%S.png)
 bindsym Print                 exec --no-startup-id scrot -q 85 $screenshot_path
 bindsym Shift + Print         exec --no-startup-id sleep 0.2 && \
-                                   scrot -q 85 -s $screenshot_path
-bindsym $mod + s                 exec --no-startup-id scrot -q 85 $screenshot_path
-bindsym $mod + Shift + s         exec --no-startup-id sleep 0.2 && \
                                    scrot -q 85 -s $screenshot_path
 
 # Volume control.
