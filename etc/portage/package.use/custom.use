@@ -25,6 +25,7 @@ media-gfx/xsane gimp jpeg png
 media-libs/freetype -bindist infinality
 media-libs/libcanberra alsa
 media-plugins/alsa-plugins pulseaudio
+media-video/obs-studio lua nvenc pulseaudio speex v4l
 net-im/pidgin gtk
 net-misc/aria2 bittorrent
 net-print/hplip hpcups scanner
