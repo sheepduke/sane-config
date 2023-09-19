@@ -12,8 +12,8 @@
     co = checkout
     cm = commit -m
     cp = cherry-pick
-    df = diff
-    ds = diff --cached
+    df = difftool -y
+    ds = difftool -y --cached
     fa = fetch -a
     lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     p = push
@@ -28,12 +28,15 @@
     wa = worktree add
     wl = worktree list
     wr = worktree remove
+
+[diff]
+	tool = nvimdiff
+
+[merge]
+  tool = nvimdiff
     
 [include]
     path = .gituser.conf
+
 [init]
     defaultBranch = master
-
-
-
-
