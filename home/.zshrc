@@ -102,6 +102,11 @@ DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# GPG
+# To fix the famous issue of:
+# gpg: signing failed: Inappropriate ioctl for device
+export GPG_TTY=$(tty)
+
 # Environment setttings
 #
 # Javascript
