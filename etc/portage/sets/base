@@ -18,6 +18,7 @@ app-text/dos2unix
 app-text/multitail
 app-text/tree
 dev-lang/rust-bin
+dev-libs/openssl-compat # Required by some old packages.
 dev-vcs/git
 net-misc/connect
 net-misc/dhcp
