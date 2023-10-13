@@ -26,6 +26,7 @@ media-libs/freetype -bindist infinality
 media-libs/libcanberra alsa
 media-plugins/alsa-plugins pulseaudio
 media-video/obs-studio lua nvenc pulseaudio speex v4l
+media-video/pipewire echo-cancel extra sound-server
 net-im/pidgin gtk
 net-misc/aria2 bittorrent
 net-print/hplip hpcups scanner
@@ -39,3 +40,6 @@ www-apps/nextcloud sqlite postgres vhosts
 x11-base/xcb-proto abi_x86_32
 x11-terms/rxvt-unicode focused-urgency font-styles mousewheel startup-notificatoin -vanilla 256-color blink buffer-on-clear wcwidth xft
 x11-terms/xterm sixel toolbar truetype unicode
+
+# temp
+media-libs/libsdl2 gles2

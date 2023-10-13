@@ -9,11 +9,9 @@ dev-db/sqlite
 mail-filter/procmail
 mail-mta/msmtp
 net-analyzer/traceroute
-net-fs/sshfs
 net-mail/getmail
 net-mail/notmuch
 net-misc/iperf
-net-misc/proxychains
 net-p2p/syncthing
 www-client/w3m
 sys-fs/mergerfs
