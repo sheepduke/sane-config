@@ -24,19 +24,30 @@ fi
 
 ## These shall be started via user-level services.
 ##
-# syncthing --no-browser &
-# pulseaudio --start &
-# dunst &
+# Input method.
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export XIM=ibus
+export XIM_PROGRAM=ibus
+export GDK_SCALE=2
+ibus-daemon -drx
 
+# Daemons.
+gentoo-pipewire-launcher &
+dunst &
+
+syncthing --no-browser &
+clash &
+
+# X settings.
 setxkbmap -option "ctrl:nocaps"
 xrdb -merge ~/.Xresources
-# ibus-daemon &
-fcitx5 &
 # unclutter -display $DISPLAY -idle 1 &
 # xkbcomp -I$HOME/.config/xkb $HOME/.config/xkb/keymap $DISPLAY
-dunst &
-# emacs &
-firefox &
+
+# Applications.
+firefox-bin &
 keepassxc &
 
-exec i3
+exec dbus-launch i3
