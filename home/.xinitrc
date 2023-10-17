@@ -50,4 +50,4 @@ xrdb -merge ~/.Xresources
 firefox-bin &
 keepassxc &
 
-exec dbus-launch i3
+exec i3
