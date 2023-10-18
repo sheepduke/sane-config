@@ -22,6 +22,7 @@ net-fs/sshfs
 net-misc/connect
 net-misc/dhcpcd
 net-misc/proxychains
+sys-apps/fd
 sys-apps/hdparm
 sys-apps/mlocate
 sys-apps/most
