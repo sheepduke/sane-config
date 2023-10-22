@@ -6,6 +6,7 @@ app-editors/emacs dynamic-loading gif gtk gui imagemagick inotify jit jpeg libxm
 app-emulation/virtualbox qt5
 app-i18n/ibus -emoji gtk python
 app-office/libreoffice-l10n linguas_zh_CN
+app-text/hunspell l10n_en
 app-text/mupdf X
 app-text/texlive context cjk xetex epspdf extra l10n_zh graphics science
 app-text/texlive-core xetex cjk detex
