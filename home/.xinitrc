@@ -47,7 +47,9 @@ xrdb -merge ~/.Xresources
 # xkbcomp -I$HOME/.config/xkb $HOME/.config/xkb/keymap $DISPLAY
 
 # Applications.
+emacs &
 firefox-bin &
+alacritty &
 keepassxc &
 
-exec i3
+exec dbus-launch --exit-with-session i3
