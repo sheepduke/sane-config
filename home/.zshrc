@@ -102,6 +102,11 @@ DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# GPG
+# To fix the famous issue of:
+# gpg: signing failed: Inappropriate ioctl for device
+export GPG_TTY=$(tty)
+
 # Environment setttings
 #
 # Javascript
@@ -122,10 +127,6 @@ export PATH="$PATH:$HOME/android/flutter/bin"
 export PUB_HOSTED_URL="https://pub.flutter-io.cn"
 export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
  
-# Ruby
-export GEM_HOME="$HOME/lib/ruby"
-PATH="$PATH:${GEM_HOME}/bin"
-
 # Rust
 export RUST_CARGO_HOME="$HOME/.cargo"
 PATH="$RUST_CARGO_HOME/bin:$PATH"
@@ -145,12 +146,12 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx -- vt1;
 fi
 
-if [[ -n $DISPLAY ]] && [[ -z "$TMUX" ]]; then
-    if [[ -z $(pgrep tmux) ]]; then
-        tmux
-    else
-        if [[ $(pgrep urxvt | wc -l) -lt 2 ]]; then
-            tmux a
-        fi
-    fi
-fi
+# if [[ -n $DISPLAY ]] && [[ -z "$TMUX" ]]; then
+#     if [[ -z $(pgrep tmux) ]]; then
+#         tmux
+#     else
+#         if [[ $(pgrep urxvt | wc -l) -lt 2 ]]; then
+#             tmux a
+#         fi
+#     fi
+# fi

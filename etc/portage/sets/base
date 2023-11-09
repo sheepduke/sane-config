@@ -1,7 +1,8 @@
 # It is barely a usable system without these packages.
 app-admin/sudo
 app-arch/p7zip
-app-editors/vim
+app-editors/neovim
+app-eselect/eselect-repository
 app-misc/tmux
 app-portage/cpuid2cpuflags
 app-portage/eix
@@ -15,11 +16,14 @@ app-shells/zsh-syntax-highlighting
 app-text/dos2unix
 app-text/multitail
 app-text/tree
-dev-lang/rust-bin
+dev-libs/openssl-compat # Required by some old packages.
+dev-libs/tree-sitter
 dev-vcs/git
+net-fs/sshfs
 net-misc/connect
-net-misc/dhcp
-net-misc/networkmanager
+net-misc/dhcpcd
+net-misc/proxychains
+sys-apps/fd
 sys-apps/hdparm
 sys-apps/mlocate
 sys-apps/most
@@ -32,7 +36,7 @@ sys-boot/refind
 sys-fs/dosfstools
 sys-fs/exfat-utils
 sys-fs/ntfs3g
-sys-kernel/genkernel
+sys-kernel/dracut
 sys-kernel/gentoo-sources
 sys-process/cronie
 sys-process/htop

@@ -7,22 +7,36 @@
     pager = true
 
 [alias]
+    ad = add .
     br = branch
     co = checkout
-    cm = commit
+    cm = commit -m
     cp = cherry-pick
-    df = diff
-    ds = diff --cached
+    df = difftool -y
+    ds = difftool -y --cached
     fa = fetch -a
     lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    p = push
+    po = push origin
+    pu = push -u origin HEAD
     re = rebase
     rs = restore
+    rt = reset
     st = status --ahead-behind
     stu = status --ahead-behind -uno
     sw = switch
     wa = worktree add
     wl = worktree list
     wr = worktree remove
+
+[diff]
+	tool = nvimdiff
+
+[merge]
+  tool = nvimdiff
     
 [include]
     path = .gituser.conf
+
+[init]
+    defaultBranch = master

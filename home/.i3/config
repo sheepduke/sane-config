@@ -29,7 +29,7 @@ bindsym $mod + Shift + $up              move up
 bindsym $mod + Shift + $down            move right
 
 # Open terminal.
-bindsym $mod + Return                   exec urxvt
+bindsym $mod + Return                   exec alacritty
 
 # kill focused window.
 bindsym $mod + q                        kill
@@ -145,16 +145,7 @@ mode "resize" {
 ######################################################################
 
 assign [class="^emacs"]                 1
-assign [class="Firefox"]                2
 assign [class="KeePassXC"]              7
-
-######################################################################
-#                              Startup                               #
-######################################################################
-
-exec --no-startup-id emacs
-exec --no-startup-id firefox
-exec --no-startup-id keepassxc
 
 ######################################################################
 #                          Misc Functions                            #

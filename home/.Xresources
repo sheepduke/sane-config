@@ -5,11 +5,6 @@
 ! This is useful in HiDPI monitors.
 ! Xft.dpi: 192
 
-! URxvt
-urxvt*font: xft:DejaVu Sans Mono:size=12, xft:WenQuanYi Micro Hei Mono:size=12
-urxvt.scrollBar: false
-urxvt.letterSpace: -1
-
 ! Emacs*useXIM: true
 
 ! ----------------------------------------------------------------------
