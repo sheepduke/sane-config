@@ -4,3 +4,11 @@ app-i18n/ibus-rime
 dev-util/github-cli
 net-im/telegram-desktop-bin
 net-proxy/clash
+
+# v2ray
+app-alternatives/v2ray-geoip
+app-alternatives/v2ray-geosite
+dev-libs/v2ray-domain-list-community-bin
+dev-libs/v2ray-geoip-bin
+net-proxy/v2ray
+net-proxy/v2rayA
