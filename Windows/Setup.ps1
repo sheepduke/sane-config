@@ -11,6 +11,6 @@ winget install Mozilla.Firefox
 winget install Rime.Weasel
 
 mkdir ~/projects
-git clone https://github.com/sheepduke/rime-config ~/projects/rime-config
-git clone https://github.com/sheepduke/sane-config ~/projects/sane-config
-git clone https://github.com/sheepduke/emacs-config ~/.emacs.d
+git clone https://github.com/sheepduke/rime-config $HOME/projects/rime-config
+git clone https://github.com/sheepduke/sane-config $HOME/projects/sane-config
+git clone https://github.com/sheepduke/emacs-config $HOME/.emacs.d
