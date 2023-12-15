@@ -2,7 +2,7 @@ app-i18n/rime-data -double-pinyin -essay -luna-pinyin -octagram -stroke -terra-p
 app-admin/keepassxc browser -network
 app-admin/testdisk zlib jpeg ntfs qt5
 app-arch/p7zip rar
-app-editors/emacs dynamic-loading gif gtk gui imagemagick inotify jit jpeg libxml2 png sqlite svg tiff tree-sitter X xft zlib
+app-editors/emacs dynamic-loading gif gtk gui imagemagick inotify jit jpeg json libxml2 png sqlite svg tiff tree-sitter X xft zlib
 app-emulation/virtualbox qt5
 app-i18n/ibus -emoji gtk python
 app-office/libreoffice-l10n linguas_zh_CN
@@ -27,7 +27,7 @@ media-libs/freetype -bindist infinality
 media-libs/libcanberra alsa
 media-plugins/alsa-plugins pulseaudio
 media-video/obs-studio lua nvenc pulseaudio speex v4l
-media-video/pipewire echo-cancel extra sound-server
+media-video/pipewire echo-cancel extra pipewire-alsa sound-server
 net-im/pidgin gtk
 net-misc/aria2 bittorrent
 net-print/hplip hpcups scanner

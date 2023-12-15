@@ -18,6 +18,7 @@ app-text/multitail
 app-text/tree
 dev-libs/openssl-compat # Required by some old packages.
 dev-libs/tree-sitter
+dev-util/git-delta
 dev-vcs/git
 net-fs/sshfs
 net-misc/connect

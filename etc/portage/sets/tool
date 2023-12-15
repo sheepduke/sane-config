@@ -1,16 +1,18 @@
 # System becomes more handy with these apps.
-app-dicts/aspell-en
 app-dicts/stardict-langdao-en-zh-gb
 app-dicts/stardict-langdao-zh-en-gb
 app-editors/emacs
-app-misc/icdiff
 app-text/sdcv
 dev-db/sqlite
-mail-filter/procmail
+dev-libs/tree-sitter-rust
+dev-util/android-tools
+dev-util/github-cli
 mail-mta/msmtp
 net-analyzer/traceroute
 net-mail/getmail
 net-mail/notmuch
+net-misc/aria2
+net-misc/ntp
 net-misc/iperf
 net-p2p/syncthing
 www-client/w3m

@@ -5,7 +5,6 @@ app-i18n/ibus-rime
 app-office/libreoffice-bin
 app-text/mupdf
 app-text/pdftk
-#dev-util/android-tools
 media-fonts/dejavu
 #media-fonts/font-adobe-75dpi
 #media-fonts/font-alias
@@ -17,6 +16,7 @@ media-gfx/gimp
 media-gfx/gthumb
 media-gfx/imagemagick
 media-gfx/scrot
+media-sound/pavucontrol
 media-video/mpv
 media-video/pipewire
 www-client/firefox-bin
