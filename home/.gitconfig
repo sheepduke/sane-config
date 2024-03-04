@@ -8,25 +8,28 @@
 
 [alias]
     ad = add .
-    br = branch
+    b = branch
+    bb = switch
+    bc = switch -c
+    bd = branch -d
+    bD = branch -D
     co = checkout
     cm = commit -m
     cp = cherry-pick
-    df = diff
+    d = diff
     ds = diff --cached
     fa = fetch -a
+    m = merge
     lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-    p = push
-    po = push origin
-    pu = push -u origin HEAD
-    re = rebase
-    rs = restore
+    r = rebase
     rt = reset
-    st = status --ahead-behind
-    stu = status --ahead-behind -uno
-    sw = switch
+    rs = restore
+  	s = status --ahead-behind
+    p = push
+    pf = push -f
+    pu = push -u origin HEAD
+    w = worktree list
     wa = worktree add
-    wl = worktree list
     wr = worktree remove
 
 [core]
