@@ -20,8 +20,12 @@
     ds = diff --cached
     fa = fetch -a
     m = merge
+    ma = merge --abort
+    mc = merge --continue
     lf = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     r = rebase
+    ra = rebase --abort
+    rc = rebase --continue
     rt = reset
     rs = restore
   	s = status --ahead-behind
