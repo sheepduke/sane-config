@@ -39,6 +39,7 @@ sys-fs/exfat-utils
 sys-fs/ntfs3g
 sys-kernel/dracut
 sys-kernel/gentoo-sources
+sys-kernel/linux-firmware
 sys-process/cronie
 sys-process/htop
 sys-process/lsof
