@@ -52,4 +52,4 @@ firefox-bin &
 alacritty &
 keepassxc &
 
-exec dbus-launch --exit-with-session i3
+exec /usr/bin/i3
