@@ -35,8 +35,8 @@ bindsym $mod + Return                   exec alacritty
 bindsym $mod + q                        kill
 
 # start dmenu/gmrun (a program launcher)
-bindsym $mod + p                        exec dmenu_run
-bindsym $mod + Shift + p                exec gmrun
+bindsym $mod + p                        exec rofi -show run
+bindsym $mod + Shift + p                exec rofi -show drun
 
 # Enter fullscreen mode for the focused container.
 bindsym $mod + f                        fullscreen toggle

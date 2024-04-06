@@ -3,7 +3,8 @@
 
 ! Set it as the multiples of 96 (magic number).
 ! This is useful in HiDPI monitors.
-! Xft.dpi: 192
+*dpi: 192
+Xft.dpi: 192
 
 ! Emacs*useXIM: true
 

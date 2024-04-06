@@ -30,13 +30,10 @@ export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export XIM=ibus
 export XIM_PROGRAM=ibus
-export GDK_SCALE=2
-ibus-daemon -drx
 
 # Daemons.
-gentoo-pipewire-launcher &
 dunst &
-
+ibus-daemon -drx
 syncthing --no-browser &
 clash &
 
@@ -48,7 +45,7 @@ xrdb -merge ~/.Xresources
 
 # Applications.
 emacs &
-firefox-bin &
+firefox &
 alacritty &
 keepassxc &
 
