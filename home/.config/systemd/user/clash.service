@@ -1,0 +1,8 @@
+[Unit]
+Description=Clash
+
+[Service]
+ExecStart=/usr/bin/clash -f ~/.config/clash/config.yaml
+
+[Install]
+WantedBy=default.target
