@@ -35,7 +35,6 @@ export XIM_PROGRAM=ibus
 dunst &
 ibus-daemon -drx
 syncthing --no-browser &
-clash &
 
 # X settings.
 setxkbmap -option "ctrl:nocaps"
