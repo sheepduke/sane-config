@@ -13,6 +13,7 @@
     bc = switch -c
     bd = branch -d
     bD = branch -D
+    br = branch -r
     co = checkout
     cm = commit -m
     cp = cherry-pick
