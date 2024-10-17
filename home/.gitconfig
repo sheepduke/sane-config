@@ -9,6 +9,7 @@
 [alias]
     ad = add .
     b = branch
+    ba = branch -a
     bb = switch
     bc = switch -c
     bd = branch -d
