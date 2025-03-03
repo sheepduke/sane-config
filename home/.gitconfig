@@ -7,6 +7,7 @@
     pager = true
 
 [alias]
+    a = add
     ad = add .
     b = branch
     ba = branch -a
@@ -20,7 +21,9 @@
     cp = cherry-pick
     d = diff
     ds = diff --cached
+    f = fetch
     fa = fetch -a
+    fp = fetch --prune
     m = merge
     ma = merge --abort
     mc = merge --continue
