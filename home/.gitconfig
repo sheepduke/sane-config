@@ -36,6 +36,7 @@
     rs = restore
   	s = status --ahead-behind
     p = push
+    pl = pull
     pf = push -f
     pu = push -u origin HEAD
     w = worktree list
