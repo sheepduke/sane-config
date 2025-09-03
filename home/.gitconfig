@@ -33,6 +33,7 @@
     ra = rebase --abort
     rc = rebase --continue
     rt = reset
+    rh = reset --hard
     rs = restore
   	s = status --ahead-behind
     p = push
