@@ -49,7 +49,6 @@ IsMicrosoftToDoWindow() {
 ShouldApplyShellBindings() {
     return IsPowerShellWindow()
            || IsPowerShellWindow()
-           || IsMicrosoftToDoWindow()
 }
 
 KillLine() {
