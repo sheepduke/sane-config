@@ -25,6 +25,7 @@
     fa = fetch -a
     fp = fetch --prune
     m = merge
+    mm = merge origin/master
     ma = merge --abort
     mc = merge --continue
     l = log
