@@ -29,7 +29,7 @@ bindsym $mod + Shift + $up              move up
 bindsym $mod + Shift + $down            move right
 
 # Open terminal.
-bindsym $mod + Return                   exec kitty
+bindsym $mod + Return                   exec ghostty
 
 # kill focused window.
 bindsym $mod + q                        kill
