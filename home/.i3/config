@@ -144,8 +144,9 @@ mode "resize" {
 #                          Windows Placement                         #
 ######################################################################
 
-assign [class="^emacs"]                 1
-assign [class="KeePassXC"]              7
+assign [class="emacs"]                 1
+assign [class="Vivaldi-stable"]        2
+assign [class="KeePassXC"]             7
 
 ######################################################################
 #                          Misc Functions                            #
@@ -161,10 +162,10 @@ bar {
 
 # Screenshot.
 # 
-set $screenshot_path          ~/pictures/screenshots/$(date +%Y-%m-%d_%H.%M.%S.png)
-bindsym Print                 exec --no-startup-id scrot -q 85 $screenshot_path
-bindsym Shift + Print         exec --no-startup-id sleep 0.2 && \
-                                   scrot -q 85 -s $screenshot_path
+# set $screenshot_path          ~/pictures/screenshots/$(date +%Y-%m-%d_%H.%M.%S.png)
+# bindsym Print                 exec --no-startup-id scrot -q 85 $screenshot_path
+# bindsym Shift + Print         exec --no-startup-id sleep 0.2 && \
+#                                    scrot -q 85 -s $screenshot_path
 
 # Volume control.
 # 
