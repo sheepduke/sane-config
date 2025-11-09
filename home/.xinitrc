@@ -25,16 +25,20 @@ fi
 ## These shall be started via user-level services.
 ##
 # Input method.
-export GTK_IM_MODULE=ibus
-export QT_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export XIM=ibus
-export XIM_PROGRAM=ibus
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export XIM=fcitx
+export XIM_PROGRAM=fcitx
+export GLFW_IM_MODULE=fcitx
 
 # Daemons.
 dunst &
-ibus-daemon -drx
+fcitx5 &
 syncthing --no-browser &
+silver-brain &
+Snipaste &
+nm-applet &
 
 # X settings.
 setxkbmap -option "ctrl:nocaps"
@@ -44,7 +48,7 @@ xrdb -merge ~/.Xresources
 
 # Applications.
 emacs &
-firefox &
+vivaldi &
 keepassxc &
 
 exec /usr/bin/i3
