@@ -143,15 +143,5 @@ test -r $HOME/.opam/opam-init/init.sh && . $HOME/.opam/opam-init/init.sh > /dev/
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-    exec startx -- vt1;
+    exec startx
 fi
-
-# if [[ -n $DISPLAY ]] && [[ -z "$TMUX" ]]; then
-#     if [[ -z $(pgrep tmux) ]]; then
-#         tmux
-#     else
-#         if [[ $(pgrep urxvt | wc -l) -lt 2 ]]; then
-#             tmux a
-#         fi
-#     fi
-# fi
