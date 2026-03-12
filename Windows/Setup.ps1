@@ -7,7 +7,7 @@ winget install voidtools.Everything
 winget install GNU.Emacs
 winget install FSFhu.Hunspell
 winget install AutoHotkey.AutoHotkey
-winget install Mozilla.Firefox
+winget install Vivaldi.Vivaldi
 winget install Rime.Weasel
 
 mkdir ~/projects
