@@ -39,6 +39,7 @@ syncthing --no-browser &
 silver-brain &
 Snipaste &
 nm-applet &
+clash-verge &
 
 # X settings.
 setxkbmap -option "ctrl:nocaps"
