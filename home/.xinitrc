@@ -49,7 +49,7 @@ xrdb -merge ~/.Xresources
 
 # Applications.
 emacs &
-vivaldi &
+firefox &
 keepassxc &
 
 exec /usr/bin/i3

@@ -144,9 +144,14 @@ mode "resize" {
 #                          Windows Placement                         #
 ######################################################################
 
+# Use `xprop` to inspect window properties.
 assign [class="emacs"]                 1
+assign [class="firefox"]               2
 assign [class="Vivaldi-stable"]        2
+assign [class="VirtualBox Machine"]    5
+assign [class="VirtualBox Manager"]    5
 assign [class="KeePassXC"]             7
+assign [class="Clash-verge"]           10
 
 ######################################################################
 #                          Misc Functions                            #
