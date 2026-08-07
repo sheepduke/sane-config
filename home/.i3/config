@@ -112,6 +112,7 @@ font pango:DejaVu Sans Mono 10
 
 # No border.
 for_window [class="^.*"] border none
+# for_window [workspace="9"] floating enable
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -148,7 +149,7 @@ mode "resize" {
 assign [class="emacs"]                 1
 assign [class="firefox"]               2
 assign [class="Vivaldi-stable"]        2
-assign [class="VirtualBox Machine"]    5
+assign [class="VirtualBox Machine"]    4
 assign [class="VirtualBox Manager"]    5
 assign [class="KeePassXC"]             7
 assign [class="Clash-verge"]           10

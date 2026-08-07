@@ -37,6 +37,7 @@
     rh = reset --hard
     rs = restore
   	s = status --ahead-behind
+    sc = sparse-checkout
     p = push
     pl = pull
     pf = push -f
