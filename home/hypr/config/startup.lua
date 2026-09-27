@@ -1,0 +1,17 @@
+hl.on("hyprland.start", function ()
+  -- Daemon
+  hl.exec_cmd("dunst")
+  hl.exec_cmd("fcitx5")
+  hl.exec_cmd("syncthing --no-browser")
+  hl.exec_cmd("silver-brain")
+  hl.exec_cmd("Snipaste")
+  hl.exec_cmd("nm-applet")
+  hl.exec_cmd("waybar & hyprpaper")
+
+  hl.exec_cmd("emacs", { workspace = 1, fullscreen_state = "2 0"})
+  hl.exec_cmd("firefox", { workspace = 2, fullscreen_state = "2 0"})
+  hl.exec_cmd("wechat", { workspace = 9 })
+  hl.exec_cmd("linuxqq", { workspace = 9 })
+  hl.exec_cmd("keepassxc", { workspace = 7 })
+  hl.exec_cmd("clash-verge", { workspace = 0 })
+end)
