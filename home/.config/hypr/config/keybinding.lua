@@ -73,12 +73,12 @@ end
 hl.bind(mod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 
-bind_special_workspace("Y", "sy")
-bind_special_workspace("U", "su")
-bind_special_workspace("I", "si")
-bind_special_workspace("O", "so")
-bind_special_workspace("M", "sm")
-bind_special_workspace("N", "sn")
+bind_special_workspace("Y", "y")
+bind_special_workspace("U", "u")
+bind_special_workspace("I", "i")
+bind_special_workspace("O", "o")
+bind_special_workspace("M", "m")
+bind_special_workspace("N", "n")
 
 -- ============================================================
 --  Dunst Control
