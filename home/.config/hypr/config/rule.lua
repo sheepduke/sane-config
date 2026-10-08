@@ -12,6 +12,15 @@ local suppressMaximizeRule = hl.window_rule({
 })
 -- suppressMaximizeRule:set_enabled(false)
 
+hl.window_rule(
+    {
+        name = "firefox-pic-in-pic",
+        match = { title = "Picture-in-Picture" },
+        float = true
+    }
+)
+
+
 -- KeePassXC
 hl.window_rule(
     {
