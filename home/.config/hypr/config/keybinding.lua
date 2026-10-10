@@ -131,10 +131,10 @@ hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-")
 -- ============================================================
 
 hl.define_submap("passthru", function()
-    hl.bind("SUPER_R", hl.dsp.submap("reset"))
+    bind("ALT_R", hl.dsp.submap("reset"))
 end)
 
-hl.bind("SUPER_R", hl.dsp.submap("passthru"))
+bind("ALT_R", hl.dsp.submap("passthru"))
 
 -- ============================================================
 --  Program
